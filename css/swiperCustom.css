@@ -1,0 +1,23 @@
+:root {
+  --swiper-navigation-size: 34px;
+  --swiper-theme-color: #ff7f27;
+}
+.mySwiper {
+  width: 100vw;
+  margin-top: 5px;
+  .swiper-slide {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--primary);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--secondary);
+  }
+}
