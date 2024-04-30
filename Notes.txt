@@ -1,0 +1,8 @@
+Animation Library
+copy and past css code
+
+https://animista.net/play/basic/flip/flip-horizontal-top
+
+Hover Effects
+https://ianlunn.github.io/Hover/#effects
+
