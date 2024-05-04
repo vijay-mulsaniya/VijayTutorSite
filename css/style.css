@@ -68,7 +68,8 @@ body {
 }
 
 .navigation,
-.desktop {
+.desktop,
+.homepagewrapper {
   display: none;
 }
 
