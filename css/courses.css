@@ -1,3 +1,7 @@
+.topBar{
+    opacity: 0 !important;
+}
+
 .desktoppage{
     position: relative;
     background-color: #fff;
@@ -98,5 +102,29 @@
 
 .footer{
    position: absolute;
-   bottom: 50;
+   bottom: 1;
+}
+
+@media only screen and (max-width: 360px) {
+    .desktoppage{
+        height: 650vh;
+    }
+    .topBar{
+        opacity: 1 !important;
+    }
+    .courseswrapper{
+        width: 100vw;
+        left: 0;
+        .coursessection{
+            .gallary{
+                grid-template-columns: auto;
+                row-gap: 25px;
+            }
+        }
+    }
+    .desktoppage{
+        position: relative;
+        background-color: #fff;
+        height: 1200vh;
+    }
 }
