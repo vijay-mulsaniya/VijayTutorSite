@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styleanimation.css">
+    <link rel="stylesheet" href="css/courses.css" type="text/css">
+</head>
+
+<body>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+        <div class="courseswrapper">
+            <div class="coursessection">
+                <h1>Courses</h1>
+                <div class="buttongroup">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('basic')"> Basic Course</button>
+                    <button class="btn" onclick="filterSelection('backend')"> Backend</button>
+                    <button class="btn" onclick="filterSelection('frontend')"> FrontEnd</button>
+                    <button class="btn" onclick="filterSelection('uiux')"> UiUx</button>
+                    <button class="btn" onclick="filterSelection('othres')"> Others</button>
+                </div>
+                <div class="gallary">
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/html.png" alt="">
+                        </div>
+                        <div class="detailsection">
+                            <h2>HTML</h2>
+                            <P>Hypertext Markup Language (HTML) is the standard markup language for documents designed
+                                to be displayed in a web browser.</P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/css.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--secondary);">
+                            <h2>CSS</h2>
+                            <P>CSS is the language for describing the presentation of Web pages, including colors,
+                                layout, and fonts.</P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/js.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Javascript</h2>
+                            <P>JavaScript is a text-based programming language used both on the client-side and
+                                server-side that allows you to make web pages interactive.</P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/dotnet.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--secondary);">
+                            <h2>C# Programming</h2>
+                            <P>C# is a modern, general-purpose programming language that can be used to perform a wide
+                                range of tasks and objectives that span over a variety of professions.</P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/sqlserver.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--primary);">
+                            <h2>Ms SQL Server</h2>
+                            <P>The SQL Server is a relational database management system from Microsoft. The system is
+                                designed and built is to manage and store information.</P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/DotNetCore1.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>.Net Core MVC</h2>
+                            <P>Build web apps, server applications and services that run on Windows, Linux, and macOS
+                                using C#, HTML, CSS, and JavaScript. Get started for free on Windows, Linux, or macOS.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/EntittyFrameWork.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Entity Framework</h2>
+                            <P>Entity Framework is a data access framework which used to create and test data in the visual studio. It is an open source object-relational mapping framework for ADO.NET.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/Linq.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Microsoft LINQ</h2>
+                            <P>Language Integrated Query (LINQ) is a Microsoft .NET Framework component that allows users to query data directly within .NET languages, such as C# and Visual Basic.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/GitHub-logo.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Git and GitHub</h2>
+                            <P>GitHub is where over 100 million developers shape the future of software, together. It is a developer platform that allows developers to create, store, manage and share their code. 
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/Figma.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--primary);">
+                            <h2>Figma</h2>
+                            <P>Figma design is for people to create, share, and test designs for websites, mobile apps, and other digital products and experiences. Figma is the leading collaborative design tool for building meaningful products. 
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/Angular Logo.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--secondary);">
+                            <h2>Angular</h2>
+                            <P>Angular is a TypeScript-based, free and open-source single-page web application framework run on Node.js. It is led by the Angular Team at Google and by a community of individuals and corporations.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/react.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--primary);">
+                            <h2>React</h2>
+                            <P>React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/coreldraw.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>CorelDRAW</h2>
+                            <P>CorelDRAW offers professional graphic design software with vector, technical illustration & CAD software options to design logos, posters, wedding cards, drafting, etc.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/illustrator.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Adobe Illustrator</h2>
+                            <P>Adobe Illustrator is a vector graphics editor and design software. An illustrator is an artist who specializes in creating visual images through a combination of design, art, and creative skills. 
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgsection">
+                            <img src="images/CoursesPage/photoshop.png" alt="">
+                        </div>
+                        <div class="detailsection" style="background-color: var(--black);">
+                            <h2>Adobe Photoshop</h2>
+                            <P>Adobe Photoshop is a raster graphics editor. Combine, retouch & remix images. With Photoshop, everyone can. Transform how you create high-quality, unique content with Gen AI in Photoshop.
+                            </P>
+                            <button>View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class = "img01" src="images/Gallary01.png" alt="">
+                <img class = "img02" src="images/Gallary02.png" alt="">
+                <img class = "img03" src="images/Gallary03.png" alt="">
+                <img class = "img04" src="images/Gallary04.png" alt="">
+                <img class = "img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
