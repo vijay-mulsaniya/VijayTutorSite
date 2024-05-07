@@ -78,7 +78,7 @@
             line-height: 150%;
             color: #fff;
           }
-          button {
+          a {
             position: absolute;
             bottom: 12px;
             cursor: pointer;
@@ -90,8 +90,9 @@
             outline: none;
             border-radius: 25px;
             background-color: #fff;
+            text-decoration: none;
           }
-          button:hover {
+          a:hover {
             background-color: yellow;
           }
         }

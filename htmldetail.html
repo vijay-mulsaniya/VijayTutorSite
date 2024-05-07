@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>HTML</h1>
+            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
+                in a web browser.</p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/HTML_Banner.svg" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Total Session:</span> 40</h3>
+                    <h3><span>Total Duration:</span> 35 hours</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4> 
+                            <h5>30% <span> off</span>
+                            </h5>  
+                        </div>
+                        
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What you will learn in this course ?</h2>
+            <div class="lessons">
+                <h3>HTML Tutorial</h3>
+                <ul style="list-style-type: circle !important;">
+                    <li>HTML Introduction</li>
+                    <li>HTML Editors</li>
+                    <li>HTML Basic</li>
+                    <li>HTML Elements</li>
+                    <li>HTML Attributes</li>
+                    <li>HTML Headings</li>
+                    <li>HTML Paragraphs</li>
+                    <li>HTML Styles</li>
+                    <li>HTML Formatting</li>
+                    <li>HTML Quotations</li>
+                    <li>HTML Computer Code</li>
+                    <li>HTML Comments</li>
+                    <li>HTML Colors</li>
+                    <li>HTML CSS</li>
+                    <li>HTML Links</li>
+                    <li>HTML Images</li>
+                    <li>HTML Tables</li>
+                    <li>HTML Lists</li>
+                    <li>HTML Blocks</li>
+                    <li>HTML Classes</li>
+                    <li>HTML Layout</li>
+                    <li>HTML Responsive</li>
+                    <li>HTML Iframes</li>
+                    <li>HTML JavaScript</li>
+                    <li>HTML Head</li>
+                    <li>HTML Entities</li>
+                    <li>HTML Symbols</li>
+                    <li>HTML Charset</li>
+                    <li>HTML URL Encode</li>
+                    <li>HTML XHTML</li>
+                </ul>
+
+                <h3>HTML Forms</h3>
+                <ul>
+                    <li>HTML Forms</li>
+                    <li>HTML Form Elements</li>
+                    <li>HTML Input Types</li>
+                    <li>HTML Input Attributes</li>
+                </ul>
+
+                <h3>HTML5</h3>
+                <ul>
+                    <li>HTML5 Intro</li>
+                    <li>HTML5 Support</li>
+                    <li>HTML5 Elements</li>
+                    <li>HTML5 Style Guide</li>
+                </ul>
+
+                <h3>HTML Graphics</h3>
+                <ul>
+                    <li>HTML Canvas</li>
+                    <li>HTML SVG</li>
+                </ul>
+
+                <h3>HTML Media</h3>
+                <ul>
+                    <li>HTML Media</li>
+                    <li>HTML Video</li>
+                    <li>HTML Audio</li>
+                    <li>HTML Plug-ins</li>
+                    <li> HTML YouTube</li>
+                </ul>
+
+                <h3>HTML APIs</h3>
+                <ul>
+                    <li>HTML Geolocation</li>
+                    <li>HTML Drag/Drop</li>
+                    <li>HTML Local Storage</li>
+                    <li>HTML App Cache</li>
+                    <li>HTML SSE (server side event)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
