@@ -79,6 +79,7 @@
             color: #fff;
           }
           a {
+            display: block;
             position: absolute;
             bottom: 12px;
             cursor: pointer;
