@@ -7,6 +7,41 @@
     <title>HTML Course Detail</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+        .courseimage {
+            width: 65%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 446px;
+                object-fit: cover;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,27 +82,27 @@
     </div>
     <div class="main">
         <div class="Headsection">
-            <h1>HTML</h1>
-            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
-                in a web browser.</p>
+            <h1>CSS</h1>
+            <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.
+            </p>
             <div class="description">
                 <div class="courseimage">
-                    <img src="images/HTML_Banner.svg" alt="">
+                    <img src="images/CSS.jpeg" alt="">
                 </div>
                 <div class="courseinfo">
                     <h2>About this Course</h2>
-                    <h3><span>Total Session:</span> 40</h3>
-                    <h3><span>Total Duration:</span> 35 hours</h3>
+                    <h3><span>Total Session:</span> 50</h3>
+                    <h3><span>Total Duration:</span> 40 hours</h3>
                     <div class="add">
                         <div class="discountsection">
                             <h6>Register</h6>
                             <h4>before</h4>
                             <h6 id="dateContainer"></h6>
-                            <h4>And Get</h4> 
+                            <h4>And Get</h4>
                             <h5>30% <span> off</span>
-                            </h5>  
+                            </h5>
                         </div>
-                        
+
                         <script>
                             var today = new Date();
                             var futureDate = new Date(today);
@@ -83,78 +118,78 @@
 
             <h2>What you will learn in this course ?</h2>
             <div class="lessons">
-                <h3>HTML Tutorial</h3>
+                <h3>CSS Tutorial</h3>
                 <ul style="list-style-type: circle !important;">
-                    <li>HTML Introduction</li>
-                    <li>HTML Editors</li>
-                    <li>HTML Basic</li>
-                    <li>HTML Elements</li>
-                    <li>HTML Attributes</li>
-                    <li>HTML Headings</li>
-                    <li>HTML Paragraphs</li>
-                    <li>HTML Styles</li>
-                    <li>HTML Formatting</li>
-                    <li>HTML Quotations</li>
-                    <li>HTML Computer Code</li>
-                    <li>HTML Comments</li>
-                    <li>HTML Colors</li>
-                    <li>HTML CSS</li>
-                    <li>HTML Links</li>
-                    <li>HTML Images</li>
-                    <li>HTML Tables</li>
-                    <li>HTML Lists</li>
-                    <li>HTML Blocks</li>
-                    <li>HTML Classes</li>
-                    <li>HTML Layout</li>
-                    <li>HTML Responsive</li>
-                    <li>HTML Iframes</li>
-                    <li>HTML JavaScript</li>
-                    <li>HTML Head</li>
-                    <li>HTML Entities</li>
-                    <li>HTML Symbols</li>
-                    <li>HTML Charset</li>
-                    <li>HTML URL Encode</li>
-                    <li>HTML XHTML</li>
+                    <li>CSS Introduction</li>
+                    <li>CSS Syntax</li>
+                    <li>CSS How To</li>
+                    <li>CSS Colors</li>
+                    <li>CSS Backgrounds</li>
+                    <li>CSS Borders</li>
+                    <li>CSS Margins</li>
+                    <li>CSS Padding</li>
+                    <li>CSS Height/Width</li>
+                    <li>CSS Text</li>
+                    <li>CSS Fonts</li>
+                    <li>CSS Links</li>
+                    <li>CSS Lists</li>
+                    <li>CSS Tables</li>
+                    <li>CSS Box Model</li>
+                    <li>CSS Outline</li>
+                    <li>CSS Display</li>
+                    <li>CSS Max-Width</li>
+                    <li>CSS Position</li>
+                    <li>CSS Float</li>
+                    <li>CSS Inline-block</li>
+                    <li>CSS Align</li>
+                    <li>CSS Combinators</li>
+                    <li>CSS Pseudo-class</li>
+                    <li>CSS Pseudo-element</li>
+                    <li>CSS Navigation Bar</li>
+                    <li>CSS Dropdowns</li>
+                    <li>CSS Tooltips</li>
+                    <li>CSS Image Gallery</li>
+                    <li>CSS Image Opacity</li>
+                    <li>CSS Image Sprites</li>
+                    <li>CSS Attr Selectors</li>
+                    <li>CSS Forms</li>
                 </ul>
 
-                <h3>HTML Forms</h3>
+                <h3>CSS3</h3>
                 <ul>
-                    <li>HTML Forms</li>
-                    <li>HTML Form Elements</li>
-                    <li>HTML Input Types</li>
-                    <li>HTML Input Attributes</li>
+                    <li>CSS3 Introduction</li>
+                    <li>CSS3 Rounded Corners</li>
+                    <li>CSS3 Border Images</li>
+                    <li>CSS3 Backgrounds</li>
+                    <li>CSS3 Colors</li>
+                    <li>CSS3 Gradients</li>
+                    <li>CSS3 Shadows</li>
+                    <li>CSS3 Text</li>
+                    <li>CSS3 Fonts</li>
+                    <li>CSS3 2D Transforms</li>
+                    <li>CSS3 3D Transforms</li>
+                    <li>CSS3 Transitions</li>
+                    <li>CSS3 Animations</li>
+                    <li>CSS3 Images</li>
+                    <li>CSS3 Buttons</li>
+                    <li>CSS3 Pagination</li>
+                    <li>CSS3 Multiple Columns</li>
+                    <li>CSS3 User Interface</li>
+                    <li>CSS3 Box Sizing</li>
+                    <li>CSS3 Flexbox</li>
+                    <li>CSS3 Media Queries</li>
+                    <li>CSS3 MQ Examples</li>
                 </ul>
 
-                <h3>HTML5</h3>
+                <h3>CSS Responsive Web Design (RWD)</h3>
                 <ul>
-                    <li>HTML5 Intro</li>
-                    <li>HTML5 Support</li>
-                    <li>HTML5 Elements</li>
-                    <li>HTML5 Style Guide</li>
-                </ul>
-
-                <h3>HTML Graphics</h3>
-                <ul>
-                    <li>HTML Canvas</li>
-                    <li>HTML SVG</li>
-                </ul>
-
-                <h3>HTML Media</h3>
-                <ul>
-                    <li>HTML Media</li>
-                    <li>HTML Video</li>
-                    <li>HTML Audio</li>
-                    <li>HTML Plug-ins</li>
-                    <li> HTML YouTube</li>
-                </ul>
-
-                <h3>HTML APIs</h3>
-                <ul>
-                    <li>HTML Geolocation</li>
-                    <li>HTML Drag/Drop</li>
-                    <li>HTML Local Storage</li>
-                    <li>HTML App Cache</li>
-                    <li>HTML SSE (server side event)</li>
+                    <li>RWD Intro</li>
+                    <li>RWD Viewport</li>
+                    <li>RWD Grid View</li>
+                    <li>RWD Media Queries</li>
+                    <li>RWD Images</li>
+                    <li>RWD Videos</li>
+                    <li>RWD Frameworks</li>
                 </ul>
             </div>
         </div>
