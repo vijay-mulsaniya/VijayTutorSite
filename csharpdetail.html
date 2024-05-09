@@ -4,9 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Course Detail</title>
+    <title>C# Course Detail</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+
+        .courseimage {
+            width: 65%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,27 +83,28 @@
     </div>
     <div class="main">
         <div class="Headsection">
-            <h1>HTML</h1>
-            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
-                in a web browser.</p>
+            <h1>C# Programming</h1>
+            <p>C# is a modern, general-purpose programming language that can be used to perform a wide range of tasks
+                and objectives that span over a variety of professions.
+            </p>
             <div class="description">
                 <div class="courseimage">
-                    <img src="images/HTML_Banner.svg" alt="">
+                    <img src="images/Csharp.png" alt="">
                 </div>
                 <div class="courseinfo">
                     <h2>About this Course</h2>
-                    <h3><span>Sessions:</span> 40</h3>
-                    <h3><span>Duration:</span> 6 Week</h3>
+                    <h3><span>Sessions:</span> 31</h3>
+                    <h3><span>Duration:</span> 10 Week</h3>
                     <div class="add">
                         <div class="discountsection">
                             <h6>Register</h6>
                             <h4>before</h4>
                             <h6 id="dateContainer"></h6>
-                            <h4>And Get</h4> 
+                            <h4>And Get</h4>
                             <h5>30% <span> off</span>
-                            </h5>  
+                            </h5>
                         </div>
-                        
+
                         <script>
                             var today = new Date();
                             var futureDate = new Date(today);
@@ -83,79 +120,99 @@
 
             <h2>What will you learn in this course ?</h2>
             <div class="lessons">
-                <h3>HTML Tutorial</h3>
-                <ul style="list-style-type: circle !important;">
-                    <li>HTML Introduction</li>
-                    <li>HTML Editors</li>
-                    <li>HTML Basic</li>
-                    <li>HTML Elements</li>
-                    <li>HTML Attributes</li>
-                    <li>HTML Headings</li>
-                    <li>HTML Paragraphs</li>
-                    <li>HTML Styles</li>
-                    <li>HTML Formatting</li>
-                    <li>HTML Quotations</li>
-                    <li>HTML Computer Code</li>
-                    <li>HTML Comments</li>
-                    <li>HTML Colors</li>
-                    <li>HTML CSS</li>
-                    <li>HTML Links</li>
-                    <li>HTML Images</li>
-                    <li>HTML Tables</li>
-                    <li>HTML Lists</li>
-                    <li>HTML Blocks</li>
-                    <li>HTML Classes</li>
-                    <li>HTML Layout</li>
-                    <li>HTML Responsive</li>
-                    <li>HTML Iframes</li>
-                    <li>HTML JavaScript</li>
-                    <li>HTML Head</li>
-                    <li>HTML Entities</li>
-                    <li>HTML Symbols</li>
-                    <li>HTML Charset</li>
-                    <li>HTML URL Encode</li>
-                    <li>HTML XHTML</li>
+                <h3>Introduction</h3>
+                <ul>
+                    <li>Visual studio overview</li>
+                    <li>Reading and writing to a console</li>
+                    <li>Built-in data types and string data type</li>
+                    <li>Operators</li>
+                    <li>Class introduction</li>
+                </ul>
+                <h3>Data Types And Variables</h3>
+                <ul>
+                    <li>Nullable Types</li>
+                    <li>Datatype conversions</li>
+                    <li>Value vs Reference Types</li>
+                    <li>DataTypes Summary</li>
                 </ul>
 
-                <h3>HTML Forms</h3>
+                <h3>Functions And Methods</h3>
                 <ul>
-                    <li>HTML Forms</li>
-                    <li>HTML Form Elements</li>
-                    <li>HTML Input Types</li>
-                    <li>HTML Input Attributes</li>
+                    <li>How to write functions</li>
+                    <li>Functions return type</li>
+                    <li>Method Parameters</li>
                 </ul>
 
-                <h3>HTML5</h3>
+                <h3>Making Decisions</h3>
                 <ul>
-                    <li>HTML5 Intro</li>
-                    <li>HTML5 Support</li>
-                    <li>HTML5 Elements</li>
-                    <li>HTML5 Style Guide</li>
+                    <li>If statement</li>
+                    <li>Switch statement</li>
                 </ul>
 
-                <h3>HTML Graphics</h3>
+                <h3>Loops</h3>
                 <ul>
-                    <li>HTML Canvas</li>
-                    <li>HTML SVG</li>
+                    <li>While loop</li>
+                    <li>Do while loop</li>
+                    <li>For loop</li>
+                    <li>foreach loop</li>
+                    <li>Break and Continue</li>
                 </ul>
 
-                <h3>HTML Media</h3>
+                <h3>Arrays</h3>
                 <ul>
-                    <li>HTML Media</li>
-                    <li>HTML Video</li>
-                    <li>HTML Audio</li>
-                    <li>HTML Plug-ins</li>
-                    <li> HTML YouTube</li>
+                    <li>What is arrays ?</li>
+                    <li>Two dimention arrays</li>
+                    <li>Three dimention arrays</li>
                 </ul>
 
-                <h3>HTML APIs</h3>
+                <h3>Debugging</h3>
                 <ul>
-                    <li>HTML Geolocation</li>
-                    <li>HTML Drag/Drop</li>
-                    <li>HTML Local Storage</li>
-                    <li>HTML App Cache</li>
-                    <li>HTML SSE (server side event)</li>
+                    <li>How to debug program ?</li>
+                    <li>Break points</li>
+                    <li>Find bug and resolve</li>
                 </ul>
+
+                <h3>Exception Handling</h3>
+                <ul>
+                    <li>Error Handling</li>
+                    <li>Inner excepitons</li>
+                    <li>Custom Exceptions</li>
+                </ul>
+
+                <h3>Object Oriented Programming</h3>
+                <ul>
+                    <li>Object oriented programming</li>
+                    <li>Namespaces</li>
+                    <li>Class introduction</li>
+                    <li>Static and instance members</li>
+                    <li>Inheritance</li>
+                    <li>Method hiding</li>
+                    <li>Polymorphism</li>
+                    <li>Method overriding Vs hiding</li>
+                    <li>Method overloading</li>
+                    <li>Properties in C#</li>
+                    <li>Structs</li>
+                    <li>Classes Vs Structs</li>
+                    <li>Interfaces</li>
+                    <li>Abstract Classes</li>
+                </ul>
+
+                <h3>Delegates</h3>
+                <ul>
+                    <li>What is delegates ?</li>
+                    <li>Delegate examples</li>
+                    <li>Multicast delegate</li>
+                </ul>
+
+                <h3>Collections</h3>
+                <ul>
+                    <li>What is dictionary ?</li>
+                    <li>List collection class</li>
+                    <li>Working with generic list class and ranges</li>
+                    <li>Sort a list of simple types</li>
+                    <li>Sort a list of complex types</li>
+                </ul>
+
             </div>
         </div>
     </div>

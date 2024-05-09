@@ -4,9 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Course Detail</title>
+    <title>JavaScript Course Detail</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+
+        .courseimage {
+            width: 65%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 446px;
+                object-fit: cover;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,27 +83,27 @@
     </div>
     <div class="main">
         <div class="Headsection">
-            <h1>HTML</h1>
-            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
-                in a web browser.</p>
+            <h1>Javascript</h1>
+            <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+            </p>
             <div class="description">
                 <div class="courseimage">
-                    <img src="images/HTML_Banner.svg" alt="">
+                    <img src="images/Javascript.png" alt="">
                 </div>
                 <div class="courseinfo">
                     <h2>About this Course</h2>
-                    <h3><span>Sessions:</span> 40</h3>
-                    <h3><span>Duration:</span> 6 Week</h3>
+                    <h3><span>Sessions:</span> 60</h3>
+                    <h3><span>Duration:</span> 10 Week</h3>
                     <div class="add">
                         <div class="discountsection">
                             <h6>Register</h6>
                             <h4>before</h4>
                             <h6 id="dateContainer"></h6>
-                            <h4>And Get</h4> 
+                            <h4>And Get</h4>
                             <h5>30% <span> off</span>
-                            </h5>  
+                            </h5>
                         </div>
-                        
+
                         <script>
                             var today = new Date();
                             var futureDate = new Date(today);
@@ -83,78 +119,84 @@
 
             <h2>What will you learn in this course ?</h2>
             <div class="lessons">
-                <h3>HTML Tutorial</h3>
-                <ul style="list-style-type: circle !important;">
-                    <li>HTML Introduction</li>
-                    <li>HTML Editors</li>
-                    <li>HTML Basic</li>
-                    <li>HTML Elements</li>
-                    <li>HTML Attributes</li>
-                    <li>HTML Headings</li>
-                    <li>HTML Paragraphs</li>
-                    <li>HTML Styles</li>
-                    <li>HTML Formatting</li>
-                    <li>HTML Quotations</li>
-                    <li>HTML Computer Code</li>
-                    <li>HTML Comments</li>
-                    <li>HTML Colors</li>
-                    <li>HTML CSS</li>
-                    <li>HTML Links</li>
-                    <li>HTML Images</li>
-                    <li>HTML Tables</li>
-                    <li>HTML Lists</li>
-                    <li>HTML Blocks</li>
-                    <li>HTML Classes</li>
-                    <li>HTML Layout</li>
-                    <li>HTML Responsive</li>
-                    <li>HTML Iframes</li>
-                    <li>HTML JavaScript</li>
-                    <li>HTML Head</li>
-                    <li>HTML Entities</li>
-                    <li>HTML Symbols</li>
-                    <li>HTML Charset</li>
-                    <li>HTML URL Encode</li>
-                    <li>HTML XHTML</li>
+                <h3>JS Tutorial</h3>
+                <ul>
+                    <li>Javascript Introduction</li>
+                    <li>JS Where To Place</li>
+                    <li>JS Output</li>
+                    <li>JS Syntax</li>
+                    <li>JS Statements</li>
+                    <li>JS Comments</li>
+                    <li>JS Variables</li>
+                    <li>JS Operators</li>
+                    <li>JS Arithmetic</li>
+                    <li>JS Assignment</li>
+                    <li>JS Data Types</li>
+                    <li>JS Functions</li>
+                    <li>JS Objects</li>
+                    <li>JS Scope</li>
+                    <li>JS Events</li>
+                    <li>JS Strings</li>
+                    <li>JS String Methods</li>
+                    <li>JS Number Methods</li>
+                    <li>JS Math</li>
+                    <li>JS Dates</li>
+                    <li>JS Date Formats</li>
+                    <li>Js Date Methods</li>
+                    <li>JS Arrays and Array Methods</li>
+                    <li>JS Booleans</li>
+                    <li>JS Comparisons</li>
+                    <li>JS Conditions</li>
+                    <li>JS Switch</li>
+                    <li>JS Loop For</li>
+                    <li>JS Loop While</li>
+                    <li>JS Break</li>
+                    <li>JS Type Conversion</li>
+                    <li>JS Errors</li>
+                    <li>JS Strict Mode</li>
+                    <li>JS Best Practices</li>
+                    <li>JS Mistakes</li>
+                    <li>JS Reserved Words</li>
+                    <li>JS JSON</li>
                 </ul>
 
-                <h3>HTML Forms</h3>
+                <h3>JS Forms</h3>
                 <ul>
-                    <li>HTML Forms</li>
-                    <li>HTML Form Elements</li>
-                    <li>HTML Input Types</li>
-                    <li>HTML Input Attributes</li>
+                    <li>Forms Validation</li>
                 </ul>
 
-                <h3>HTML5</h3>
+                <h3>JS Objects</h3>
                 <ul>
-                    <li>HTML5 Intro</li>
-                    <li>HTML5 Support</li>
-                    <li>HTML5 Elements</li>
-                    <li>HTML5 Style Guide</li>
+                    <li>JS Objects</li>
+                    <li>Object Definitions</li>
+                    <li>Object Properties</li>
+                    <li>Object Methods</li>
+                    <li>Object Prototypes</li>
                 </ul>
 
-                <h3>HTML Graphics</h3>
+                <h3>JS Functions</h3>
                 <ul>
-                    <li>HTML Canvas</li>
-                    <li>HTML SVG</li>
+                    <li>JS Functions</li>
+                    <li>Function Definitions</li>
+                    <li>Function Parameters</li>
+                    <li>Function Invocation</li>
+                    <li>Function Closures</li>
                 </ul>
 
-                <h3>HTML Media</h3>
+                <h3>JS HTML DOM</h3>
                 <ul>
-                    <li>HTML Media</li>
-                    <li>HTML Video</li>
-                    <li>HTML Audio</li>
-                    <li>HTML Plug-ins</li>
-                    <li> HTML YouTube</li>
-                </ul>
-
-                <h3>HTML APIs</h3>
-                <ul>
-                    <li>HTML Geolocation</li>
-                    <li>HTML Drag/Drop</li>
-                    <li>HTML Local Storage</li>
-                    <li>HTML App Cache</li>
-                    <li>HTML SSE (server side event)</li>
+                    <li>DOM Intro</li>
+                    <li>DOM Methods</li>
+                    <li>DOM Document</li>
+                    <li>DOM Elements</li>
+                    <li>DOM HTML</li>
+                    <li>DOM CSS</li>
+                    <li>DOM Animations</li>
+                    <li>DOM Events</li>
+                    <li>DOM EventListener</li>
+                    <li>DOM Navigation</li>
+                    <li>DOM Nodes</li>
+                    <li>DOM Nodelist</li>
                 </ul>
             </div>
         </div>

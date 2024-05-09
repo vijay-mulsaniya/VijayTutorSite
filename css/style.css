@@ -807,7 +807,7 @@ section {
         display: block;
       }
       .detailtext {
-        width: 60vw;
+        width: 90vw;
         font-size: 16px;
         line-height: 150%;
         color: rgba(25, 25, 25, 0.8);

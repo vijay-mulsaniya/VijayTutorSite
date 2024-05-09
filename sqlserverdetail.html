@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Server Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+
+        .courseimage {
+            width: 65%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>Ms SQL Server</h1>
+            <p>The SQL Server is a relational database management system from Microsoft. The system is designed and
+                built is to manage and store information.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/SQL_logo.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 31</h3>
+                    <h3><span>Duration:</span> 10 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>Lesson - 01</h3>
+                <ul>
+                    <li>Introduction to SQL Server Management studio.</li>
+                    <li>Create-Delete new database</li>
+                    <li>Create new table use designer and script</li>
+                    <li>Alter table</li>
+                    <li>Delete table</li>
+                    <li>Insert row int table</li>
+                </ul>
+                <h3>Lesson - 02</h3>
+                <ul>
+                    <li>What is primary key and foreign key ?</li>
+                    <li>Why RDBMS Relational Database Management Systyem ?</li>
+                    <li>Check constraint</li>
+                    <li>Default constraint</li>
+                    <li>Cascading referential integrity constraint real world use case and examples</li>
+                </ul>
+                <h3>Lesson - 03</h3>
+                <ul>
+                    <li>Identity columns, Auto increment identity value</li>
+                    <li>Identity On-Off when insert new row into table</li>
+                    <li>How to get last generated identity value</li>
+                    <li>Unique key constraint</li>
+                </ul>
+                <h3>Lesson - 04</h3>
+                <ul>
+                    <li>Select statements</li>
+                    <li>Get distinct records. distinct behaviour with single and multiple columns select.</li>
+                    <li>Where clause examples.</li>
+                    <li>Operators and wild cards examples.</li>
+                    <li>Like operator</li>
+                    <li>In operator</li>
+                    <li>Not operator</li>
+                    <li>Searching and sorting data</li>
+                </ul>
+                <h3>Lesson - 05</h3>
+                <ul>
+                    <li>Group by consept in SQL Server</li>
+                    <li>Sum, Min Max and Average functions.</li>
+                    <li>Group by multiple columns</li>
+                    <li>Group by multiple aggregation</li>
+                    <li>Having clause</li>
+                </ul>
+                <h3>Lesson - 06</h3>
+                <ul>
+                    <li>Joins in SQL Server</li>
+                    <li>Inner join</li>
+                    <li>Left join</li>
+                    <li>Right join</li>
+                    <li>Full join</li>
+                </ul>
+                <h3>Lesson - 07</h3>
+                <ul>
+                    <li>Cross join</li>
+                    <li>Self join</li>
+                    <li>Advance or intelligent joins</li>
+                </ul>
+                <h3>Lesson - 08</h3>
+                <ul>
+                    <li>Isnull function</li>
+                    <li>Case when function</li>
+                    <li>Coalesce function</li>
+                    <li>Union and Union All</li>
+                </ul>
+                <h3>Lesson - 09</h3>
+                <ul>
+                    <li>What is stored procedures</li>
+                    <li>How to write stored procedures</li>
+                    <li>Alter stored procedures</li>
+                    <li>Delete stored procedures</li>
+                    <li>How to encript stored procedures</li>
+                    <li>Use sp_helptext stored procedure</li>
+                </ul>
+                <h3>Lesson - 10</h3>
+                <ul>
+                    <li>Stored procedures with output parameter.</li>
+                    <li>Stored procedure return values.</li>
+                    <li>When to use output parameter over return values.</li>
+                    <li>Advantage of stored procedures.</li>
+                    <li>What is SQL injection attack ?</li>
+                </ul>
+                <h3>Lesson - 11</h3>
+                <ul>
+                    <li>String functions</li>
+                    <li>Left, Right, Ltrim and Rtrim functions</li>
+                    <li>CharIndex and Substring functions</li>
+                    <li>Replicate function</li>
+                    <li>PatIndex function</li>
+                </ul>
+                <h3>Lesson - 12</h3>
+                <ul>
+                    <li>Date time functions</li>
+                    <li>GetDate function</li>
+                    <li>GetUTCdate function</li>
+                    <li>IsDate function</li>
+                    <li>Day, Month, Year and Date name function</li>
+                    <li>Cast and Convert function</li>
+                </ul>
+                <h3>Lesson - 13</h3>
+                <ul>
+                    <li>User defined functions in SQL</li>
+                    <li>Scalar function in SQL</li>
+                    <li>Inline table valued function</li>
+                </ul>
+                <h3>Lesson - 14</h3>
+                <ul>
+                    <li>Temp tables in SQL</li>
+                    <li>How to create aleter and delete temp tables</li>
+                    <li>Difference between global and local temp tables</li>
+                </ul>
+                <h3>Lesson - 15</h3>
+                <ul>
+                    <li>Indexes in SQL Server.</li>
+                    <li>Cluster and non cluster indexes in SQL</li>
+                    <li>Unique and non unique indexes in SQL</li>
+                    <li>Indexes pros and cons</li>
+                </ul>
+                <h3>Lesson - 16</h3>
+                <ul>
+                    <li>Views in SQL server</li>
+                    <li>Why use view ?</li>
+                    <li>Create view in SQL</li>
+                    <li>Delete view in SQL</li>
+                    <li>View limitations</li>
+                </ul>
+                <h3>Lesson - 17</h3>
+                <ul>
+                    <li>Triggers in SQL</li>
+                    <li>After triggers</li>
+                    <li>Instead of trigger</li>
+                </ul>
+                <h3>Lesson - 18</h3>
+                <ul>
+                    <li>Disable and enable trigger</li>
+                    <li>Alter and delete trigger</li>
+                    <li>Record insert, delete and update actions using triggers</li>
+                </ul>
+                <h3>Lesson - 19</h3>
+                <ul>
+                    <li>What is CTE(Comman Table Expression) in SQL ?</li>
+                    <li>Drive Table and CTE</li>
+                    <li>How to write CTE</li>
+                </ul>
+                <h3>Lesson - 20</h3>
+                <ul>
+                    <li>Recursive CTE</li>
+                    <li>Example of CTE</li>
+                    <li>Display family tree using CTE</li>
+                </ul>
+                <h3>Lesson - 21</h3>
+                <ul>
+                    <li>Subquries in SQL</li>
+                    <li>Corelated Subquries</li>
+                    <li>Subquries example</li>
+                </ul>
+                <h3>Lesson - 22</h3>
+                <ul>
+                    <li>Rownumber function in SQL</li>
+                    <li>Rank function in SQL</li>
+                    <li>Dense_rank function in SQL</li>
+                </ul>
+                <h3>Lesson - 23</h3>
+                <ul>
+                    <li>Diffrence rownumber, rank and denserank function</li>
+                    <li>Delete duplicate records using CTE and rownumber function</li>
+                    <li>Find Nth higest salary using CTE and dense_rank function</li>
+                </ul>
+                <h3>Lesson - 24</h3>
+                <ul>
+                    <li>Get list of all tables</li>
+                    <li>Get list of all stored procedures</li>
+                    <li>Get list of all columns</li>
+                    <li>Write rerunnable quires</li>
+                </ul>
+                <h3>Lesson - 25</h3>
+                <ul>
+                    <li>Select into statement</li>
+                    <li>Table backup using select into statement</li>
+                    <li>Create empty table using select into statement</li>
+                </ul>
+                <h3>Lesson - 26</h3>
+                <ul>
+                    <li>Transactions in SQL server</li>
+                    <li>When to use transactions</li>
+                    <li>Commit and rollback transaction</li>
+                    <li>Transaction Isolation lavel</li>
+                </ul>
+                <h3>Lesson - 27</h3>
+                <ul>
+                    <li>Revision - 1</li>
+                    <li>Meth functions</li>
+                </ul>
+                <h3>Lesson - 28</h3>
+                <ul>
+                    <li>Revision - 2</li>
+                    <li>Paging in SQL server using offset fetch next</li>
+                </ul>
+                <h3>Lesson - 29</h3>
+                <ul>
+                    <li>Revision - 3</li>
+                    <li>Generate database scripts</li>
+                </ul>
+                <h3>Lesson - 30</h3>
+                <ul>
+                    <li>Revision - 4</li>
+                    <li>Backup and restore database</li>
+                </ul>
+                <h3>Lesson - 31</h3>
+                <ul>
+                    <li>Database design tips and tricks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

@@ -4,9 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Course Detail</title>
+    <title>Entitty FrameWork - Detail</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+
+        .courseimage {
+            width: 65%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,27 +83,28 @@
     </div>
     <div class="main">
         <div class="Headsection">
-            <h1>HTML</h1>
-            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
-                in a web browser.</p>
+            <h1>Entity Freamwork</h1>
+            <p>Entity Framework is a data access framework which used to create and test data in the visual studio.It is
+                an open source object-relational mapping framework for ADO.NET.
+            </p>
             <div class="description">
                 <div class="courseimage">
-                    <img src="images/HTML_Banner.svg" alt="">
+                    <img src="images/EntittyFrameWork.png" alt="">
                 </div>
                 <div class="courseinfo">
                     <h2>About this Course</h2>
-                    <h3><span>Sessions:</span> 40</h3>
-                    <h3><span>Duration:</span> 6 Week</h3>
+                    <h3><span>Sessions:</span> 8</h3>
+                    <h3><span>Duration:</span> 6 week</h3>
                     <div class="add">
                         <div class="discountsection">
                             <h6>Register</h6>
                             <h4>before</h4>
                             <h6 id="dateContainer"></h6>
-                            <h4>And Get</h4> 
+                            <h4>And Get</h4>
                             <h5>30% <span> off</span>
-                            </h5>  
+                            </h5>
                         </div>
-                        
+
                         <script>
                             var today = new Date();
                             var futureDate = new Date(today);
@@ -83,78 +120,45 @@
 
             <h2>What will you learn in this course ?</h2>
             <div class="lessons">
-                <h3>HTML Tutorial</h3>
-                <ul style="list-style-type: circle !important;">
-                    <li>HTML Introduction</li>
-                    <li>HTML Editors</li>
-                    <li>HTML Basic</li>
-                    <li>HTML Elements</li>
-                    <li>HTML Attributes</li>
-                    <li>HTML Headings</li>
-                    <li>HTML Paragraphs</li>
-                    <li>HTML Styles</li>
-                    <li>HTML Formatting</li>
-                    <li>HTML Quotations</li>
-                    <li>HTML Computer Code</li>
-                    <li>HTML Comments</li>
-                    <li>HTML Colors</li>
-                    <li>HTML CSS</li>
-                    <li>HTML Links</li>
-                    <li>HTML Images</li>
-                    <li>HTML Tables</li>
-                    <li>HTML Lists</li>
-                    <li>HTML Blocks</li>
-                    <li>HTML Classes</li>
-                    <li>HTML Layout</li>
-                    <li>HTML Responsive</li>
-                    <li>HTML Iframes</li>
-                    <li>HTML JavaScript</li>
-                    <li>HTML Head</li>
-                    <li>HTML Entities</li>
-                    <li>HTML Symbols</li>
-                    <li>HTML Charset</li>
-                    <li>HTML URL Encode</li>
-                    <li>HTML XHTML</li>
+                <h3>Introduction</h3>
+                <ul>
+                    <li>What is Entity Framework Core?</li>
+                    <li>Why use an ORM?</li>
+                    <li>How to Install Entity Framework Core</li>
                 </ul>
 
-                <h3>HTML Forms</h3>
+                <h3>Connection String</h3>
                 <ul>
-                    <li>HTML Forms</li>
-                    <li>HTML Form Elements</li>
-                    <li>HTML Input Types</li>
-                    <li>HTML Input Attributes</li>
+                    <li>Configuring The Connection String</li>
+                    <li>Storing Connection Strings</li>
                 </ul>
 
-                <h3>HTML5</h3>
+                <h3>DbContext</h3>
                 <ul>
-                    <li>HTML5 Intro</li>
-                    <li>HTML5 Support</li>
-                    <li>HTML5 Elements</li>
-                    <li>HTML5 Style Guide</li>
+                    <li>DbContext in dependency injection for ASP.NET Core</li>
+                    <li>Adding data</li>
+                    <li>Modifying data</li>
+                    <li>Delete data</li>
                 </ul>
 
-                <h3>HTML Graphics</h3>
+                <h3>DbSet</h3>
                 <ul>
-                    <li>HTML Canvas</li>
-                    <li>HTML SVG</li>
+                    <li>Adding data</li>
+                    <li>Modifying data</li>
+                    <li>Delete data</li>
                 </ul>
 
-                <h3>HTML Media</h3>
+                <h3>Models</h3>
                 <ul>
-                    <li>HTML Media</li>
-                    <li>HTML Video</li>
-                    <li>HTML Audio</li>
-                    <li>HTML Plug-ins</li>
-                    <li> HTML YouTube</li>
+                    <li>Model binding</li>
+                    <li>Model Configuration</li>
+                    <li>Updating the Model</li>
                 </ul>
 
-                <h3>HTML APIs</h3>
+                <h3>Writting Quries</h3>
                 <ul>
-                    <li>HTML Geolocation</li>
-                    <li>HTML Drag/Drop</li>
-                    <li>HTML Local Storage</li>
-                    <li>HTML App Cache</li>
-                    <li>HTML SSE (server side event)</li>
+                    <li>Writting Simple Quries</li>
+                    <li>Writting Complex Quries</li>
                 </ul>
             </div>
         </div>
