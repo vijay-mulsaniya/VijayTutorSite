@@ -450,7 +450,8 @@ section {
 .footer {
   padding: 30px 15px;
   width: 100vw;
-  background-color: var(--primary);
+  margin-top: 100px;
+  background-color: var(--secondary);
   .info {
     display: flex;
     flex-direction: column;
@@ -862,7 +863,8 @@ section {
   .footer {
     display: flex;
     flex-direction: row;
-    gap: 55px;
+    background-color: var(--darkGreen);
+    gap: 65px;
     .info {
       flex-grow: 1;
       flex-basis: min-content;
