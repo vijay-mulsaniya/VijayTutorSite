@@ -837,15 +837,15 @@ section {
     height: 100vh;
     .videos {
       display: flex;
-      gap: 10px;
+      gap: 30px;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       .video {
         position: relative;
         border: 2px solid var(--primary);
-        width: 30vw;
-        height: 40vh;
+        width: 26vw;
+        height: 34vh;
       }
     }
   }
