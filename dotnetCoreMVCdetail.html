@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.Net Core MVC Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .courseimage {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 40%;
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>ASP.NET Core Programming</h1>
+            <p>Begin your journey into web development with ASP.NET Core. This beginner-friendly pathway is designed to
+                guide newcomers through the fundamentals of C#, HTML, Razor Pages, and more!
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/DotNetCore.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 90</h3>
+                    <h3><span>Duration:</span> 25 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>Get started with ASP.NET Core MVC</h3>
+                <ul>
+                    <li>Introduction .NET Core</li>
+                    <li>Setting up machine for asp.net core development</li>
+                    <li>Create a web app project</li>
+                    <li>Run the project</li>
+                    <li>Make code changes</li>
+                </ul>
+
+                <h3>ASP.NET Core Project Overview</h3>
+                <ul>
+                    <li>Main method in ASP.NET Core</li>
+                    <li>ASP.NET Core In Process Hosting</li>
+                    <li>ASP.NET Core Out Of Process Hostiing</li>
+                    <li>ASP NET Core launchsettings.json file</li>
+                    <li>ASP.NET Core appsettings.json file</li>
+                </ul>
+
+                <h3>Middleware and Process Hostiing Pipeline</h3>
+                <ul>
+                    <li>What is Middleware ?</li>
+                    <li>Configure Request Process Pipeline</li>
+                </ul>
+
+                <h3>Static Files</h3>
+                <ul>
+                    <li>Setup for Static Files</li>
+                    <li>Serving static files outside of wwwroot folder</li>
+                    <li>Serving a default document</li>
+                    <li>Use Server Middleware for Static Files</li>
+                </ul>
+
+                <h3>Debugging</h3>
+                <ul>
+                    <li>How to debug program ?</li>
+                    <li>Break points</li>
+                    <li>Find bug and resolve</li>
+                </ul>
+
+                <h3>Exception Handling</h3>
+                <ul>
+                    <li>Error Handling</li>
+                    <li>Inner excepitons</li>
+                    <li>Custom Exceptions</li>
+                </ul>
+
+                <h3>Global Exception Handling</h3>
+                <ul>
+                    <li>Use Developer Exception Page Middleware</li>
+                    <li>Customising Developer Exception Page Middleware</li>
+                    <li>How UseDeveloperExceptionPage Middleware works</li>
+                    <li>Throwing an Exception in ASP.NET Core</li>
+                    <li>Write Exception Detail to File</li>
+                    <li>Handling 404 not found in ASP.NET Core</li>
+                    <li>Centralised 404 Handling</li>
+                </ul>
+
+                <h3>Software Development Environments</h3>
+                <ul>
+                    <li>What is Development Staging and Production Environments ?</li>
+                    <li>Why Need to Different Development Environments ?</li>
+                    <li>Configuring ASPNETCORE_ENVIRONMENT variable</li>
+                    <li>Useful methods of IHostingEnvironment service</li>
+                </ul>
+
+                <h3>ASP.NET Core MVC</h3>
+                <ul>
+                    <li>What is MVC ?</li>
+                    <li>How MVC works</li>
+                    <li>Data Model
+                        <ul>
+                            <li>Model Bindings</li>
+                            <li>Model Validations</li>
+                            <li>Model Attributes</li>
+                        </ul>
+                    </li>
+                    <li>View Model</li>
+                    <li>Add a View
+                        <ul>
+                            <li>HTML View</li>
+                            <li>Strongly Typed View</li>
+                            <li>Manage Page Title</li>
+                            <li>Where are View files stored</li>
+                            <li>Views Discovery</li>
+                            <li>Layout View</li>
+                            <li>Rendering the Section</li>
+                            <li>Providing Section Content</li>
+                            <li>_ViewStart.cshtml File</li>
+                            <li>_ViewImport.cshtml File</li>
+                            <li>Install and Use Bootstrap in ASP.NET Core</li>
+                        </ul>
+                    </li>
+                    <li>Add a Controller
+                        <ul>
+                            <li>Passing Data Controller to View</li>
+                            <li>ViewBag and ViewData</li>
+                            <li>Pass Data Using Model Bindings</li>
+                            <li>Routing in ASP.NET Core</li>
+                            <li>Attribute Routing</li>
+                        </ul>
+                    </li>
+                    <li>Controller Return Types
+                        <ul>
+                            <li>Return View</li>
+                            <li>Return Json</li>
+                            <li>Return Object Types</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <h3>Tag Helpers</h3>
+                <ul>
+                    <li>What are Tag Helpers ?</li>
+                    <li>Importing built-in Tag Helpers</li>
+                    <li>Generating Links using Tag Helpers</li>
+                    <li>Anchor Tag Helper</li>
+                    <li>Image Tag Helper</li>
+                    <li>Environments Tag Helper</li>
+                    <li>Form Tag Helper</li>
+                </ul>
+
+                <h3>ASP.NET Core Dependency Injection</h3>
+                <ul>
+                    <li>Registering Services with the ASP.NET Core Dependency Injection Container</li>
+                    <li>Lifetime of the registered service</li>
+                    <li>Singleton service</li>
+                    <li>Scoped service</li>
+                    <li>Transient service</li>
+                    <li>Singleton VS Scoped VS Transient</li>
+                </ul>
+
+                <h3>Working With Database</h3>
+                <ul>
+                    <li>Configure Database Connection Strings</li>
+                    <li>Connect SQL Server Databae</li>
+                    <li>Differece between Code First and DB first</li>
+                    <li>What is Repository Pattern in ASP.NET Core</li>
+                    <li>Introduction to EntittyFrameWork</li>
+                    <li>Install Entitty FrameWork</li>
+                    <li>DbContext in Entitty FrameWork</li>
+                    <li>Entitty FrameWork Migrations</li>
+                    <li>Remove Migrations</li>
+                    <li>Run Migration and Update Database</li>
+                    <li>Repository Pattern in ASP.NET Core</li>
+                    <li>Working width Database Using ADO.Net</li>
+                    <li>Writing Database Quires</li>
+                    <li>Database Backu and Restoration</li>
+                </ul>
+
+                <h3>Working With Api</h3>
+                <ul>
+                    <li>Waht is Api and Api Methods</li>
+                    <li>Configure Api Routing</li>
+                    <li>HTTP Get Api</li>
+                    <li>HTTP Post Api</li>
+                    <li>HTTP Put Api</li>
+                    <li>HTTP Delete Api</li>
+                    <li>Implement CRUD Operations</li>
+                    <li>Testing Your Api Using Swagger</li>
+                    <li>Testing Your Api Using Postman</li>
+                </ul>
+
+                <h3>Authentication and Authorization</h3>
+                <ul>
+                    <li>What is Authentication and Authorization ?</li>
+                    <li>Role Base Authentication</li>
+                    <li>Claim Base Authentication</li>
+                    <li>Manage User Rights</li>
+                    <li>Adding and Removing User Roles</li>
+                    <li>What is JWT Token ?</li>
+                    <li>Impliment Token Base Authentication</li>
+                </ul>
+
+                <h3>Sending An Email</h3>
+                <ul>
+                    <li>Create Email Service</li>
+                    <li>Use SmtpCient</li>
+                    <li>Setup Mail Message</li>
+                    <li>Send Email</li>
+                </ul>
+
+                <h3>File Upload</h3>
+                <ul>
+                    <li>Upload Single File</li>
+                    <li>Upload Multiple File</li>
+                    <li>Using Hosting Environments Web Root Path</li>
+                    <li>Provide a unique name for uploading the file</li>
+                </ul>
+
+                <h3>Project</h3>
+                <ul>
+                    <li>Project Training with Object Orieanted Concepts</li>
+                    <li>Maitain Multiple Projects</li>
+                    <li>Use Nuget Package Manager</li>
+                    <li>CRUD Operations</li>
+                    <li>Serching Functionality</li>
+                </ul>
+
+                <h3>Bonus Points</h3>
+                <ul>
+                    <li>How to Deploy Project on IIS Server</li>
+                    <li>My Live Project experiences</li>
+                    <li>Interview Questions and Answers</li>
+                    <li>Course Matirials</li>
+                    <li>Tips and Tricks</li>
+                    <li>Exploring advanced topics based on student interest</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

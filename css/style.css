@@ -843,8 +843,7 @@ section {
       justify-content: center;
       .video {
         position: relative;
-        border: 2px solid var(--primary);
-        width: 26vw;
+        width: 24vw;
         height: 34vh;
       }
     }

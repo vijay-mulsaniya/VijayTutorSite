@@ -4,28 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entitty FrameWork - Detail</title>
+    <title>Git and GitHub Course Detail</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/htmlcoursedetail.css">
     <style>
         .Headsection {
             margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
         }
 
         .courseimage {
-            width: 65%;
-            height: auto;
+            display: flex;
+            justify-content: center;
 
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
 
         @media only screen and (max-width: 740px) {
             .Headsection {
                 margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
             }
 
             .description {
@@ -83,18 +99,18 @@
     </div>
     <div class="main">
         <div class="Headsection">
-            <h1>Entity Freamwork</h1>
-            <p>Entity Framework is a data access framework which used to create and test data in the visual studio.It is
-                an open source object-relational mapping framework for ADO.NET.
-            </p>
+            <h1>Git and GitHub</h1>
+            <p>This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.
+                You'll create your own repository and learn GitHub's pull request workflow, a popular way to
+                create and review code.</p>
             <div class="description">
                 <div class="courseimage">
-                    <img src="images/EntittyFrameWork.png" alt="">
+                    <img src="images/CoursesPage/GitHub-logo.png" alt="">
                 </div>
                 <div class="courseinfo">
                     <h2>About this Course</h2>
-                    <h3><span>Sessions:</span> 8</h3>
-                    <h3><span>Duration:</span> 6 week</h3>
+                    <h3><span>Sessions:</span> 15</h3>
+                    <h3><span>Duration:</span> 6 Week</h3>
                     <div class="add">
                         <div class="discountsection">
                             <h6>Register</h6>
@@ -120,54 +136,97 @@
 
             <h2>What will you learn in this course ?</h2>
             <div class="lessons">
-                <h3>Introduction</h3>
+                <h3>Introduction to Version Control and Git</h3>
                 <ul>
-                    <li>What is Entity Framework Core?</li>
-                    <li>Why use an ORM?</li>
-                    <li>How to Install Entity Framework Core</li>
+                    <li>Understanding version control systems</li>
+                    <li>Introduction to Git: Installation and configuration</li>
                 </ul>
 
-                <h3>Connection String</h3>
+                <h3>Git Basics</h3>
                 <ul>
-                    <li>Configuring The Connection String</li>
-                    <li>Storing Connection Strings</li>
+                    <li>Creating a new Git repository</li>
+                    <li>Basic Git commands: init, add, commit, status</li>
+                </ul>
+                
+                <h3>Collaborating with GitHub</h3>
+                <ul>
+                    <li>Introduction to GitHub</li>
+                    <li>Setting up a GitHub account</li>
+                    <li>Pushing local repositories to GitHub</li>
+                </ul>
+                
+                <h3>Branching in Git</h3>
+                <ul>
+                    <li>Understanding branches and branching strategies</li>
+                    <li>Creating and switching branches</li>
+                    <li>Merging branches</li>
                 </ul>
 
-                <h3>DbContext</h3>
+                <h3>Collaborating with Others</h3>
                 <ul>
-                    <li>DbContext in dependency injection for ASP.NET Core</li>
-                    <li>Adding data</li>
-                    <li>Modifying data</li>
-                    <li>Delete data</li>
+                    <li>Cloning remote repositories</li>
+                    <li>Forking and contributing to open-source projects</li>
+                    <li>Pull requests and code reviews</li>
                 </ul>
 
-                <h3>EntittyFrameWork Migrations</h3>
+                <h3>Git Remotes</h3>
                 <ul>
-                    <li>Write Migrations</li>
-                    <li>Remove Migrations</li>
-                    <li>Update Database</li>
-                    <li>Seed Data</li>
+                    <li>Managing remote repositories</li>
+                    <li>Fetching, pulling, and pushing changes</li>
+                    <li>Resolving conflicts</li>
                 </ul>
 
-                <h3>DbSet</h3>
+                <h3>Git Undo</h3>
                 <ul>
-                    <li>Adding data</li>
-                    <li>Modifying data</li>
-                    <li>Delete data</li>
+                    <li>Git Revert</li>
+                    <li>Git Reset Changes</li>
+                    <li>Git Amend</li>
                 </ul>
 
-                <h3>Models</h3>
+                <h3>Git Workflow Strategies</h3>
                 <ul>
-                    <li>Model binding</li>
-                    <li>Model Configuration</li>
-                    <li>Updating the Model</li>
+                    <li>Understanding Git workflows (e.g., centralized, feature branch, Gitflow)</li>
+                    <li>Choosing the right workflow for your project</li>
                 </ul>
 
-                <h3>Writting Quries</h3>
+                <h3>Issue Tracking and Project Management</h3>
                 <ul>
-                    <li>Writting Simple Quries</li>
-                    <li>Writting Complex Quries</li>
+                    <li>Creating and managing issues</li>
+                    <li>Using labels, milestones, and assignees</li>
+                    <li>Integrating issues with commits</li>
                 </ul>
+
+                <h3>GitHub Pages</h3>
+                <ul>
+                    <li>Introduction to GitHub Pages</li>
+                    <li>Creating a simple website with GitHub Pages</li>
+                </ul>
+
+                <h3>Continuous Integration with GitHub Actions</h3>
+                <ul>
+                    <li>Introduction to GitHub Actions</li>
+                    <li>Setting up CI/CD workflows</li>
+                </ul>
+
+                <h3>Code Quality and Code Review Tools</h3>
+                <ul>
+                    <li>Integrating code quality tools (e.g., linters, code formatters)</li>
+                    <li>Code review best practices</li>
+                </ul>
+               
+                <h3>Final Projects</h3>
+                <ul>
+                    <li>Group project: Collaboratively develop a project using Git and GitHub</li>
+                    <li>Presentation and code review</li>
+                </ul>
+
+                <h3>Final Projects</h3>
+                <ul>
+                    <li>Review of course material</li>
+                    <li>Q&A sessions</li>
+                    <li>Exploring advanced Git and GitHub topics based on student interest</li>
+                </ul>
+               
             </div>
         </div>
     </div>
