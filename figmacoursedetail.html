@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .courseimage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>What is Figma ?</h1>
+            <p>Figma design is for people to create, share, and test designs for websites, mobile apps, and other
+                digital products and experiences. It is a popular tool for designers, product managers, writers and
+                developers and helps anyone involved in the design process contribute, give feedback, and make better
+                decisions, faster.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/CoursesPage/Figma.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 20</h3>
+                    <h3><span>Duration:</span> 8 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>Introduction to Figma</h3>
+                <ul>
+                    <li>Overview of Figma and its interface</li>
+                    <li>Creating a new project</li>
+                    <li>Basic shapes and tools</li>
+                    <li>Working with frames and layers</li>
+                </ul>
+
+                <h3>Design Basics</h3>
+                <ul>
+                    <li>Typography in Figma</li>
+                    <li>Color styles and themes</li>
+                    <li>Layout grids and guides</li>
+                    <li>Components and instances</li>
+                </ul>
+
+                <h3>Advanced Design Techniques</h3>
+                <ul>
+                    <li>Auto Layout</li>
+                    <li>Responsive design in Figma</li>
+                    <li>Using constraints</li>
+                    <li>Prototyping basics</li>
+                </ul>
+
+                <h3>Collaboration and Feedback</h3>
+                <ul>
+                    <li>Sharing designs and prototypes</li>
+                    <li>Commenting and feedback</li>
+                    <li>Version history</li>
+                    <li>Team libraries and assets</li>
+                </ul>
+
+                <h3>Prototyping and Interactions</h3>
+                <ul>
+                    <li>Creating interactive prototypes</li>
+                    <li>Animations and transitions</li>
+                    <li>Overlays and interactions</li>
+                    <li>User testing with prototypes</li>
+                </ul>
+
+                <h3>Advanced Topics and Project</h3>
+                <ul>
+                    <li>Plugins and integrations</li>
+                    <li>Exporting assets</li>
+                    <li>Design systems and documentation</li>
+                    <li>Building a small project to apply what has been learned</li>
+                </ul>
+
+                <h3>Final Projects</h3>
+                <ul>
+                    <li>project including desktop tablet and mobile screen</li>
+                    <li>Q&A sessions</li>
+                    <li>Exploring advanced Figma topics based on student interest</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

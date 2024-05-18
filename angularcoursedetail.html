@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .courseimage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>What is Angular ?</h1>
+            <p>Angular is a platform and framework for building single-page client applications using HTML and
+                TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of
+                TypeScript libraries that you import into your applications.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/CoursesPage/Angular Logo.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 20</h3>
+                    <h3><span>Duration:</span> 8 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>Introduction to Angular</h3>
+                <ul>
+                    <li>Overview of Angular and its architecture</li>
+                    <li>Setting up the development environment</li>
+                    <li>Angular CLI</li>
+                    <li>Components and templates</li>
+                </ul>
+
+                <h3>Data Binding and Directives</h3>
+                <ul>
+                    <li>Interpolation and property binding</li>
+                    <li>Event binding</li>
+                    <li>Two-way data binding</li>
+                    <li>Built-in directives (ngIf, ngFor, etc.)</li>
+                </ul>
+
+                <h3>Services and Dependency Injection</h3>
+                <ul>
+                    <li>Creating and using services</li>
+                    <li>Dependency injection</li>
+                    <li>HTTP client module</li>
+                    <li>Making HTTP requests</li>
+                </ul>
+
+                <h3>Routing and Navigation</h3>
+                <ul>
+                    <li>Setting up Angular Router</li>
+                    <li>Defining routes</li>
+                    <li>Route parameters</li>
+                    <li>Navigation guards</li>
+                </ul>
+
+                <h3>Forms in Angular</h3>
+                <ul>
+                    <li>Template-driven forms</li>
+                    <li>Reactive forms</li>
+                    <li>Form validation</li>
+                    <li>Dynamic forms</li>
+                </ul>
+
+                <h3>Advanced Topics and Project</h3>
+                <ul>
+                    <li>Angular modules and lazy loading</li>
+                    <li>State management</li>
+                    <li>Testing Angular applications</li>
+                    <li>Building a small project to apply what has been learned</li>
+                </ul>
+
+                <h3>Final Projects</h3>
+                <ul>
+                    <li>Develop Angular Application</li>
+                    <li>Q&A sessions</li>
+                    <li>Exploring advanced Angular topics based on student interest</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorelDraw Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .courseimage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>What is COREL DRAW ?</h1>
+            <p>CorelDraw is used primarily for marketing and advertising businesses, particularly those that specialize
+                in print advertising development.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/CoursesPage/coreldraw.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 20</h3>
+                    <h3><span>Duration:</span> 8 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>Practical Project</h3>
+                <ul>
+                    <li>Create Visiting Cards</li>
+                    <li>Create Invitation Cards</li>
+                    <li>Create Wedding Cards</li>
+                    <li>Create HandBills</li>
+                    <li>Create Bill Books</li>
+                    <li>Create Broucher</li>
+                    <li>Create Road Hordings</li>
+                    <li>Create Sign Borad</li>
+                    <li>Logo Design</li>
+                </ul>
+
+                <h3>CorelDRAW basics</h3>
+                <ul>
+                    <li>Understanding vector graphics and bitmaps</li>
+                    <li>Starting and opening drawings</li>
+                    <li>Acquiring images from scanners and digital cameras</li>
+                    <li>Undoing, redoing, and repeating actions</li>
+                    <li>Zooming, panning, and scrolling</li>
+                    <li>Previewing drawings</li>
+                    <li>Choosing viewing modes</li>
+                    <li>Working with views</li>
+                    <li>Saving drawings</li>
+                    <li>Backing up and recovering files</li>
+                    <li>Adding and accessing drawing information</li>
+                    <li>Closing drawings and quitting CorelDRAW</li>
+                    <li>Exploring basic tasks</li>
+                </ul>
+
+                <h3>Working with lines, outlines, and brushstrokes</h3>
+                <ul>
+                    <li>Drawing lines</li>
+                    <li>Drawing calligraphic, pressure-sensitive, and preset lines</li>
+                    <li>Formatting lines and outlines</li>
+                    <li>Adding arrowheads to lines and curves</li>
+                    <li>Closing multiple line segments</li>
+                    <li>Applying brushstrokes</li>
+                    <li>Spraying objects along a line</li>
+                    <li>Drawing connector, callout, and dimension lines</li>
+                </ul>
+
+                <h3>Drawing shapes</h3>
+                <ul>
+                    <li>Drawing rectangles squares, ellipses, circles, arcs, and pie shapes</li>
+                    <li>Drawing polygons and stars</li>
+                    <li>Drawing spirals grids and predefined shapes</li>
+                </ul>
+
+                <h3>Shaping objects</h3>
+                <ul>
+                   <li>Using curve objects</li>
+                   <li>Selecting and moving nodes</li>
+                   <li>Manipulating segments</li>
+                   <li>Adding, removing, joining, and aligning nodes</li>
+                   <li>Using node types</li>
+                   <li>Transforming nodes</li>
+                   <li>Breaking the path of curve objects</li>
+                   <li>Skewing and stretching objects</li>
+                   <li>Smudging objects</li>
+                   <li>Roughening objects</li>
+                   <li>Applying distortion effects</li>
+                   <li>Shaping objects by using envelopes</li>
+                   <li>Cropping, splitting, and erasing objects</li>
+                   <li>Trimming objects</li>
+                   <li>Filleting, scalloping, and chamfering corners</li>
+                   <li>Welding and intersecting objects</li>
+                   <li>Creating PowerClip objects</li>
+                </ul>
+
+                <h3>Working with color</h3>
+                <ul>
+                   <li>Understanding color models</li>
+                   <li>Using the Document palette</li>
+                   <li>Creating and editing custom color palettes</li>
+                   <li>Organizing and displaying color palettes</li>
+                   <li>Displaying or hiding color palettes in the Palette libraries</li>
+                   <li>Setting the properties of color palettes</li>
+                   <li>Working with color management presets</li>
+                   <li>Working with color trapping and overprinting</li>
+                </ul>
+
+                <h3>Filling objects</h3>
+                <ul>
+                    <li>Applying uniform fills</li>
+                    <li>Applying fountain fills</li>
+                    <li>Applying pattern fills</li>
+                    <li>Applying texture fills</li>
+                    <li>Applying mesh fills</li>
+                    <li>Applying fills to areas</li>
+                </ul>
+
+                <h3>Using Color Management</h3>
+                <ul>
+                    <li>Understanding color management</li>
+                    <li>Converting colors to other color profiles</li>
+                    <li>Working with color management presets</li>
+                    <li>Using a safe CMYK workflow</li>
+                </ul>
+
+                <h3>Changing the transparency of objects</h3>
+                <ul>
+                    <li>Applying transparencies</li>
+                    <li>Applying merge modes</li>
+                </ul>
+
+                <h3>Using lenses with objects</h3>
+                <ul>
+                    <li>Applying lenses</li>
+                    <li>Editing lenses</li>
+                </ul>
+
+                <h3>Adding 3D effects to objects</h3>
+                <ul>
+                    <li>Contouring objects</li>
+                    <li>Applying perspective to objects</li>
+                    <li>Creating extrusions</li>
+                    <li>Creating bevel effects</li>
+                    <li>Creating drop shadows</li>
+                    <li>Blending objects</li>
+                </ul>
+
+                <h3>Adding and formatting text</h3>
+                <ul>
+                    <li>Adding and Selecting text</li>
+                    <li>Changing the basic properties of text</li>
+                    <li>Finding, editing, and converting text</li>
+                    <li>Aligning text</li>
+                    <li>Spacing text, Shifting and rotating text</li>
+                    <li>Fitting text to a path</li>
+                    <li>Formatting paragraph text</li>
+                    <li>Combining and linking paragraph text frames</li>
+                    <li>Wrapping paragraph text around objects, artistic text, and text frames</li>
+                    <li>Displaying nonprinting characters</li>
+                </ul>
+                <h3>Using writing tools</h3>
+                <ul>
+                    <li>Using QuickCorrect</li>
+                    <li>Using the spelling checker and Grammatik</li>
+                    <li>Using the thesaurus</li>
+                    <li>Customizing the writing tools</li>
+                    <li>Using checking styles</li>
+                    <li>Using word lists</li>
+                    <li>Checking statistics</li>
+                </ul>
+                <h3>Working with graphics, text, and color styles</h3>
+                <ul>
+                    <li>Creating, applying, and editing graphics styles or text styles</li>
+                    <li>Customizing the Graphic and Text Styles docker</li>
+                    <li>Creating and applying color styles</li>
+                    <li>Editing and sorting color styles</li>
+                    <li>Moving and copying color styles</li>
+                </ul>
+                <h3>Working with pages and layout tools</h3>
+                <ul>
+                    <li>Specifying the page layout</li>
+                    <li>Choosing a page background</li>
+                    <li>Adding, duplicating, renaming, and deleting pages</li>
+                    <li>Using the rulers & Calibrating the rulers</li>
+                    <li>Setting up the grid</li>
+                    <li>Setting up guidelines</li>
+                    <li>Setting the drawing scale</li>
+                </ul>
+
+                <h3>Working with bitmaps</h3>
+                <ul>
+                    <li>Converting vector graphics to bitmaps</li>
+                    <li>Importing bitmaps</li>
+                    <li>Cropping bitmaps</li>
+                    <li>Changing the dimensions and resolution of bitmaps</li>
+                    <li>Applying special effects in bitmaps</li>
+                    <li>Using the Image Adjustment Lab</li>
+                    <li>Adjusting color and tone</li>
+                    <li>Using the Tone Curve filter</li>
+                    <li>Editing Bitmap with Photoshop</li>
+                </ul>
+
+                <h3>Working with bitmap color modes</h3>
+                <ul>
+                    <li>Changing the color mode of bitmaps</li>
+                    <li>Changing bitmaps to black-and-white images</li>
+                    <li>Changing bitmaps to duotones</li>
+                </ul>
+
+                <h3>Tracing bitmaps and editing traced results</h3>
+                <ul>
+                    <li>Tracing bitmaps</li>
+                    <li>PowerTRACE controls</li>
+                    <li>Fine tuning traced results</li>
+                    <li>Adjusting colors in traced results</li>
+                    <li>Setting default tracing options</li>
+                </ul>
+
+                <h3>Printing basics</h3>
+                <ul>
+                    <li>Printing your work</li>
+                    <li>Laying out print jobs</li>
+                    <li>Previewing print jobs</li>
+                    <li>Applying print styles</li>
+                </ul>
+
+                <h3>Preparing files for print service providers</h3>
+                <ul>
+                    <li>Preparing a print job for a print service provider</li>
+                    <li>Working with imposition layouts</li>
+                    <li>Printing printers’ marks</li>
+                    <li>Printing color separations</li>
+                    <li>Working with color trapping and overprinting</li>
+                </ul>
+
+                <h3>Creating objects for the Web</h3>
+                <ul>
+                    <li>Exporting bitmaps for the Web</li>
+                    <li>Exporting objects with transparent colors and backgrounds</li>
+                </ul>
+                <h3>File formats</h3>
+                <ul>
+                    <li>Importing and exporting files</li>
+                    <li>Exporting to PDF</li>
+                    <li>Supported file formats</li>
+                </ul>
+                <h3>Customizing and automating</h3>
+                <ul>
+                    <li>Setting basic preferences</li>
+                    <li>Customizing CorelDRAW</li>
+                    <li>Using macros and scripts to automate tasks</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

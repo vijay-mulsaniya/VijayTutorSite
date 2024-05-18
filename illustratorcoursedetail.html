@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrator Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .courseimage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>What is Illustrator ?</h1>
+            <p>Adobe Illustrator is the industry standard design app that lets you capture your creative vision with
+                shapes, color, effects, and typography and many more.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/CoursesPage/illustrator.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 30</h3>
+                    <h3><span>Duration:</span> 8 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>You will learn</h3>
+                <ul>
+                    <li>Logo Design</li>
+                    <li>Brochure design</li>
+                    <li>Vector Artwork</li>
+                    <li>Recreate Artwork</li>
+                    <li>Business Cards</li>
+                    <li>Create Backgrounds</li>
+                    <li>Web Layouts</li>
+                    <li>Icon design</li>
+                    <li>Various type of printing technics</li>
+                </ul>
+
+                <h3>About the work Area</h3>
+                <ul>
+                    <li>Introduction</li>
+                    <li>An Overview of Adobe Illustrator</li>
+                    <li>Title-bar, Menu-bar, Toolbar and Illustrator palettes</li>
+                </ul>
+
+                <h3>Looking at the Work Area</h3>
+                <ul>
+                    <li>Using palettes</li>
+                    <li>Toolbox overview</li>
+                    <li>Using context menus</li>
+                    <li>Using the Navigator palette</li>
+                    <li>Using the status bar</li>
+                    <li>Setting preferences</li>
+                </ul>
+
+                <h3>Viewing artwork</h3>
+                <ul>
+                    <li>Setting up windows and views</li>
+                    <li>Viewing artwork as paths</li>
+                    <li>Viewing artwork as pixels</li>
+                    <li>Viewing how colors will overprint</li>
+                    <li>Magnifying and reducing the view</li>
+                </ul>
+
+                <h3>Setting Up Artwork in Illustrator</h3>
+                <ul>
+                    <li>About vector graphics and bitmap images</li>
+                    <li>About resolution in bitmap images</li>
+                    <li>Setting up the work area</li>
+                    <li>Tiling artwork and adjusting page boundaries</li>
+                    <li>Opening and placing artwork</li>
+                    <li>Managing linked and embedded images</li>
+                </ul>
+
+                <h3>Drawing in Illustrator</h3>
+                <ul>
+                    <li>About paths</li>
+                    <li>Drawing and editing free form paths</li>
+                    <li>Adjusting path segments</li>
+                    <li>Drawing shapes</li>
+                    <li>Drawing flares</li>
+                    <li>Drawing line and arc segments</li>
+                    <li>Drawing spirals</li>
+                    <li>Working with symbols</li>
+                    <li>Using symbolism tools</li>
+                    <li>Drawing and editing brushed paths</li>
+                    <li>Managing brushes</li>
+                    <li>Creating brushes</li>
+                    <li>Using the brush libraries</li>
+                    <li>Tracing artwork</li>
+                </ul>
+
+                <h3>Working With Objects</h3>
+                <ul>
+                    <li>Using rulers</li>
+                    <li>Changing the ruler origin</li>
+                    <li>Using the measure tool</li>
+                    <li>Using guides and grids</li>
+                    <li>Using Smart Guides</li>
+                    <li>Selecting objects</li>
+                    <li>Using the measure tool</li>
+                    <li>Moving, copying, and deleting objects</li>
+                    <li>Grouping and un-grouping objects</li>
+                    <li>Locking and hiding objects</li>
+                </ul>
+
+                <h3>Transforming and Distorting Shapes</h3>
+                <ul>
+                    <li>Transforming and Distorting Shapes</li>
+                    <li>Transforming selected objects</li>
+                    <li>Using the bounding box</li>
+                    <li>Using Warp effects</li>
+                    <li>Using envelopes</li>
+                    <li>Modifying shapes with liquify tool</li>
+                    <li>Modifying shapes with filters and effects</li>
+                    <li>Blending shapes</li>
+                    <li>Using the Pen & Ink filters</li>
+                    <li>Using the Pathfinder palette</li>
+                    <li>Combining objects into complex shapes</li>
+                    <li>Creating compound paths</li>
+                    <li>Converting strokes to filled objects</li>
+                    <li>Working with clipping masks</li>
+                </ul>
+
+                <h3>Color modes and models</h3>
+                <ul>
+                    <li>HSB model</li>
+                    <li>RGB model</li>
+                    <li>CMYK model</li>
+                    <li>Color gamuts</li>
+                    <li>About spot and process color types</li>
+                    <li>Working with swatches and unnamed colors</li>
+                    <li>Using the Color palette</li>
+                    <li>Applying color by dragging and dropping</li>
+                    <li>Using the Stroke palette</li>
+                    <li>Using the Color Picker</li>
+                </ul>
+
+                <h3>Using Transparency, Gradients,and Patterns</h3>
+                <ul>
+                    <li>Using the Transparency palette</li>
+                    <li>Creating opacity masks</li>
+                    <li>Create a clipping mask</li>
+                    <li>Working with gradient fills</li>
+                    <li>Creating multicolored objects with the mesh tool</li>
+                    <li>Creating and working with patterns</li>
+                    <li>Constructing patterns with irregular textures</li>
+                </ul>
+                <h3>Using Layers</h3>
+                <ul>
+                    <li>Using the Layers palette</li>
+                    <li>Creating and modifying layers</li>
+                    <li>Changing the appearance of artwork using the Layers </li>
+                    <li>palette</li>
+                    <li>Locking artwork</li>
+                    <li>Hiding or displaying artwork</li>
+                </ul>
+
+                <h3>Using Appearance Attributes,Styles, and Effects</h3>
+                <ul>
+                    <li>Using the Appearance palette</li>
+                    <li>Using styles</li>
+                    <li>Using style libraries</li>
+                    <li>Using effects</li>
+                </ul>
+
+                <h3>Working with Bitmap Images</h3>
+                <ul>
+                    <li>Changing vector graphics into bitmap images</li>
+                    <li>Applying filters and filter effects</li>
+                </ul>
+
+                <h3>Using Type</h3>
+                <ul>
+                    <li>Creating type & Select type</li>
+                    <li>Showing hidden characters</li>
+                    <li>Using the Character palette</li>
+                    <li>Transforming type</li>
+                    <li>Changing text orientation</li>
+                    <li>Modifying letterforms as graphic objects</li>
+                    <li>Working with columns of text</li>
+                    <li>Formatting columns and paragraphs</li>
+                    <li>Editing tex</li>
+                    <li>Checking spelling</li>
+                    <li>Finding and replacing text</li>
+                    <li>Changing capitalization</li>
+                </ul>
+
+                <h3>Saving and Exporting</h3>
+                <ul>
+                    <li>Saving artwork in Illustrator format</li>
+                    <li>Saving artwork in .EPS format</li>
+                    <li>Saving artwork in Adobe PDF format</li>
+                    <li>Exporting artwork in Photoshop format</li>
+                </ul>
+                <h3>Printing</h3>
+                <ul>
+                    <li>Various type of printing technics</li>
+                    <li>Types of printing</li>
+                    <li>Half-toning</li>
+                    <li>Color separation</li>
+                    <li>Printing your file</li>
+                </ul>
+
+                <h3>Automating Tasks</h3>
+                <ul>
+                    <li>About automating tasks using actions and scripts</li>
+                    <li>Using the Actions palette</li>
+                    <li>Creating and recording actions</li>
+                    <li>Playing actions</li>
+                    <li>Batch processing</li>
+                    <li>To delete a set, action, or command</li>
+                    <li>To save a set of actions</li>
+                    <li>Playing Actions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>

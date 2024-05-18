@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoshop Course Detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        .Headsection {
+            margin-top: 30px;
+
+            p {
+                width: 50vw;
+            }
+        }
+
+        .description {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .courseimage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+            .Headsection {
+                margin-top: 0px;
+
+                p {
+                    width: 90vw;
+                    text-align: justify;
+                    line-height: 150%;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .description {
+                flex-direction: column;
+            }
+
+            .courseimage {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Headsection">
+            <h1>What is PhotoShop ?</h1>
+            <p>Photoshop is a popular image changing software. It is widely used by photographers for photo editing and
+                by graphic designers and Web designers to create images.
+            </p>
+            <div class="description">
+                <div class="courseimage">
+                    <img src="images/CoursesPage/photoshop.png" alt="">
+                </div>
+                <div class="courseinfo">
+                    <h2>About this Course</h2>
+                    <h3><span>Sessions:</span> 30</h3>
+                    <h3><span>Duration:</span> 8 Week</h3>
+                    <div class="add">
+                        <div class="discountsection">
+                            <h6>Register</h6>
+                            <h4>before</h4>
+                            <h6 id="dateContainer"></h6>
+                            <h4>And Get</h4>
+                            <h5>30% <span> off</span>
+                            </h5>
+                        </div>
+
+                        <script>
+                            var today = new Date();
+                            var futureDate = new Date(today);
+                            futureDate.setDate(today.getDate() + 5);
+                            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            var formattedDate = futureDate.toLocaleDateString('en-US', options);
+                            var dateContainer = document.getElementById('dateContainer');
+                            dateContainer.textContent = formattedDate;
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What will you learn in this course ?</h2>
+            <div class="lessons">
+                <h3>You can do the following</h3>
+                <ul>
+                    <li>Photo Mixing</li>
+                    <li>Photo/Image Manipulation</li>
+                    <li>Background Creation</li>
+                    <li>Black & White to Color Photograph</li>
+                    <li>Create Special Effect on Text</li>
+                    <li>Create Special Effect on Photograph</li>
+                    <li>Create Banners/Hordings in Photoshop</li>
+                    <li>Create Business Cards in Photoshop</li>
+                    <li>Create Diwali Cards in Photoshop</li>
+                    <li>Drawing for Web Application</li>
+                </ul>
+                <h3>An Overview of Adobe Photoshop</h3>
+                <ul>
+                    <li>Work Area</li>
+                    <li>Viewing images</li>
+                    <li>Correcting mistakes</li>
+                    <li>Using the toolbox and pallates</li>
+                    <li>Reverting to a previous version of an image</li>
+                    <li>Duplicating images</li>
+                    <li>Using rulers, columns, the measure tool, guides, and the grid</li>
+                    <li>About bitmap images and vector graphics</li>
+                    <li>About image size and resolution</li>
+                    <li>Changing image size and resolution</li>
+                    <li>Scanning images</li>
+                    <li>Saving and Exporting Images</li>
+                </ul>
+                <h3>Selecting</h3>
+                <ul>
+                    <li>Using the Select menu</li>
+                    <li>Using the marquee tools</li>
+                    <li>Using the lasso, polygonal lasso, and magnetic lasso tools</li>
+                    <li>Setting options for the lasso, polygonal lasso, and magnetic lasso tools</li>
+                    <li>Using the magic wand tool</li>
+                    <li>Using the Color Range command</li>
+                    <li>Adjusting pixel selections</li>
+                    <li>Softening the edges of a selection</li>
+                    <li>Moving, copying, and pasting selections and layers</li>
+                    <li>Using the Snap command</li>
+                    <li>Deleting selections</li>
+                    <li>Extracting objects from their background</li>
+                </ul>
+                <h3>Using Layers</h3>
+                <ul>
+                    <li>Using the Layers palette</li>
+                    <li>Creating layers and layer sets</li>
+                    <li>Working with layered images</li>
+                    <li>Managing layers</li>
+                    <li>Setting opacity and blending options</li>
+                    <li>Using layer effects and styles</li>
+                    <li>Using adjustment layers and fill layers</li>
+                    <li>Masking layers</li>
+                    <li>Creating clipping groups</li>
+                </ul>
+                <h3>Transforming and Retouching</h3>
+                <ul>
+                    <li>Changing the size of the work canvas</li>
+                    <li>Rotating and flipping entire images</li>
+                    <li>Cropping images</li>
+                    <li>Cloning and repairing images</li>
+                    <li>Retouching images</li>
+                </ul>
+                <h3>Drawing</h3>
+                <ul>
+                    <li>Drawing shapes and paths</li>
+                    <li>Using the shape tools</li>
+                    <li>Using the pen tools</li>
+                    <li>Using the Paths palette</li>
+                    <li>Converting between paths and selection borders</li>
+                    <li>Adding color to paths</li>
+                </ul>
+                <h3>Painting</h3>
+                <ul>
+                    <li>Painting tools (Brush, Pencil)</li>
+                    <li>Working with Brushes and using the Brushes pale</li>
+                    <li>Using the eraser tool, Magic Eraser tool, Background Eraser tool</li>
+                    <li>Using the gradient tool and Apply gradient fill</li>
+                    <li>Specifying the gradient transparency</li>
+                    <li>Creating noise gradient fills</li>
+                    <li>Managing gradients</li>
+                    <li>Using the paint bucket tool</li>
+                    <li>Creating and managing patterns</li>
+                    <li>Using the Color Picker</li>
+                </ul>
+                <h3>Using Channels and Masks</h3>
+                <ul>
+                    <li>Using the Channels palette</li>
+                    <li>Managing and Delete channels</li>
+                    <li>About spot colors</li>
+                    <li>Creating temporary masks in Quick Mask mode</li>
+                </ul>
+                <h3>Applying Filters and Special Effects</h3>
+                <ul>
+                    <li>Using filters</li>
+                    <li>Tips for creating special effects</li>
+                    <li>Create backgrounds</li>
+                    <li>Choosing a filter effect</li>
+                    <li>Lighting Effects filter</li>
+                </ul>
+                <h3>Using Type</h3>
+                <ul>
+                    <li>Using the type tools</li>
+                    <li>Working with type layers</li>
+                    <li>Editing text in type layers</li>
+                    <li>Changing type layer orientation</li>
+                    <li>Warping type layers</li>
+                    <li>Formatting characters</li>
+                </ul>
+                
+                <h3>Printing in PhotoShop</h3>
+                <ul>
+                    <li>Set Photoshop print options</li>
+                    <li>Positioning and scaling images</li>
+                    <li>What is color traps ?</li>
+                    <li>What is halftone screen attributes ?</li>
+                </ul>
+
+                <h3>Automating Tasks</h3>
+                <ul>
+                    <li>About actions</li>
+                    <li>Using the Actions palette</li>
+                    <li>Recording actions</li>
+                    <li>Playing actions</li>
+                    <li>Editing actions</li>
+                    <li>Saving and loading actions</li>
+                </ul>
+                
+                <h3>Windows Shortcuts</h3>
+                <ul>
+                    <li>Useful Photoshop Shortcut Key Chart</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>
