@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/htmlcoursedetail.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navmenu {
+            background: #FFF;
+        }
+
+        .main {
+            padding: 0;
+            margin: 0;
+            width: 99vw;
+
+        }
+
+        .bannerimg {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .topwhite {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 80px;
+            background: #FFCCFF;
+            opacity: 0.5;
+        }
+
+        .myjourny {
+            min-height: 100vh;
+            background: var(--secondary);
+            padding-bottom: 50px;
+        }
+
+        .footer {
+            width: 99vw;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 3;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2em;
+            color: #FFF;
+        }
+
+        .imgGridContainer {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box {
+            width: 100%;
+            box-shadow: 6px 6px 20px hsl(138, 58%, 33%);
+        }
+
+        .box-1 {
+            img {
+                height: 100%;
+            }
+        }
+        .box-3 {
+          
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+       
+        .box-2, .box-4, .box-6 {
+            text-align: left;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.3);
+            .special{
+                font-style: italic;
+                line-height: 3;
+                font-weight: 500;
+                font-size: 1em;
+            }
+            h1{
+                color: #3e3e3e;
+                padding: 0;
+                opacity: 1;
+                font-size: 1.2em;
+                font-weight: 600;
+                line-height: 2;
+                text-align: left;
+            }
+            p{
+                line-height: 1.8;
+            }
+        }
+
+        .myMemories{
+            background-color: black;
+            min-height: 100vh;
+            padding-bottom: 100px;
+            .memoryImgContainer{
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                gap: 10px;
+               
+                .imageBox{
+                    border: 2px solid rgb(132, 132, 132);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+            }
+        }
+        @media only screen and (max-width: 740px) {}
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="desktoppage">
+        <div class="topwhite"></div>
+        <div class="navigation">
+            <div class="logo slide-in-left">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu slide-in-right">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="gallary.html">Gallary</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="bannerimg">
+            <img src="images/awards.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="myjourny">
+        <h1>My journey: from Dedication to Transformation</h1>
+        <div class="imgGridContainer">
+            <div class="box box-1">
+                <img src="images/Certi_Myjourny.png" alt="">
+            </div>
+            <div class="box box-2">
+                <h1>Going Above and Beyond</h1>
+                <p>During my time as an employee, I dedicated myself to my work with passion and determination. My
+                    efforts did not go unnoticed. At our company's annual function, I was honored with a Certificate of
+                    Appreciation. The certificate proudly reads:</p>
+                    <p class="special">“This Certificate is proudly present to Vijay Mulsaniya for GOING ABOVE AND BEYONT FOR PSO.”</p>
+                    <p>This recognition was a testament to my commitment to excellence and my drive to always deliver my best.</p><br>
+                    <h1>A New Beginning...</h1>
+                    <p>After receiving this award, my life took an exciting turn. I transitioned from being a graphics designer to becoming a software engineer. This shift was not just a change in job titles but a significant milestone in my professional journey. It marked the beginning of a new chapter where I could apply my creativity and technical skills to solve complex problems and create innovative solutions.</p>
+            </div>
+            <div class="box box-3">
+                <img src="images/Annual-Award_Myjourny.png" alt="">
+                <p style="text-align: center;padding-top: 8px;">Excellence in Action: My 2022 Milestone</p>
+            </div>
+            <div class="box box-4">
+                <h1>Excellence in Action: My 2022 Milestone</h1>
+                <h1>A Year Of Achievement</h1>
+                <p>The year 2022 marked a significant milestone in my career. My dedication to programming and relentless pursuit of excellence culminated in the creation of an outstanding software product tailored for the diamond industry. This project not only challenged my skills but also allowed me to contribute something valuable to a sector that demands precision and innovation.</p>
+                <h1>Recognition from the Top</h1>
+                <p>My hard work was acknowledged at the highest level during our company's annual function. I was honored to receive an award from our CEO for the amazing work I had accomplished. In addition to this, I was recognized as the best employee for that quarter. This accolade was a reflection of my commitment to delivering quality results and my passion for pushing the boundaries of what's possible in software development.</p>
+            </div>
+            <div class="box box-5">
+                <img src="images/Certi1.png" width="100%" alt="">
+            </div>
+            <div class="box box-6">
+                <h1>Recognized for Excellence</h1>
+                <p>This certificate was awarded to me in recognition of my hard work and dedication during the last quarter of 2022. It symbolizes my commitment to developing a robust and innovative diamond-selling software that not only met industry standards but also exceeded expectations.</p>
+                <h1>Honoring Dedication and Innovation</h1>
+                <p>My journey during this period was marked by a deep focus on enhancing our product’s functionality and performance. In addition to my development work, I took the opportunity to share my advanced programming knowledge with the team, ensuring that we all grew together and pushed the boundaries of what we could achieve.</p>
+                <p><strong>Advancing Programming Knowledge: </strong>Beyond my project contributions, I actively shared advanced programming knowledge with my team. By conducting workshops, mentoring colleagues, and fostering a collaborative learning environment, I aimed to uplift the entire team's skill set and drive collective success.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="myMemories">
+        <h1>My Memories As an employee (leader)</h1>
+        <div class="memoryImgContainer">
+            <div class="imageBox img-1">
+                <img src="images/MyMemories/01.png" alt="">
+            </div>
+            <div class="imageBox img-2"><img src="images/MyMemories/02.png" alt=""></div>
+            <div class="imageBox img-3">
+                <img src="images/MyMemories/03.png" alt="">
+            </div>
+            <div class="imageBox img-4">
+                <img src="images/MyMemories/04.png" alt="">
+            </div>
+            <div class="imageBox img-5">
+                <img src="images/MyMemories/05.png" alt="">
+            </div>
+            <div class="imageBox img-6">
+                <img src="images/MyMemories/06.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="info">
+            <H1>Vijay Tutor</H1>
+            <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                programmer, we have tailored courses to meet your needs.
+            </p>
+        </div>
+        <div class="info">
+            <H1>Info</H1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Conatact Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Youtute</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <H1>Gallary</H1>
+            <div class="images">
+                <img class="img01" src="images/Gallary01.png" alt="">
+                <img class="img02" src="images/Gallary02.png" alt="">
+                <img class="img03" src="images/Gallary03.png" alt="">
+                <img class="img04" src="images/Gallary04.png" alt="">
+                <img class="img05" src="images/Gallary05.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <H1>Conatact</H1>
+            <div class="contactdetail">
+                <div class="contactline">
+                    <img src="images/Phone.png" width="20" alt="">
+                    <p>
+                        +91 91735 46430
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                    <p>
+                        Vijay.trainer@gmail.com
+                    </p>
+                </div>
+                <div class="contactline">
+                    <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                    <p>
+                        C-415, IT Park, <br />
+                        Nr. Sudama Chowk, <br />
+                        Mota Varachha Surat. <br />
+                        395006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggleMenuButton = document.getElementById("toggleMenuButton");
+        var menu = document.querySelectorAll(".menu, .active")[0];
+        toggleMenuButton.addEventListener("click", function () {
+            menu.classList.toggle("activemenu");
+        });
+    </script>
+</body>
+
+</html>
