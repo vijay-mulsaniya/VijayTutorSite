@@ -66,7 +66,7 @@
         }
 
         .imgGridContainer {
-            width: 80%;
+            width: 100%;
             margin: auto;
             display: grid;
             gap: 15px;
@@ -144,29 +144,86 @@
             }
         }
 
+        @media only screen and (max-width: 2000px) {
+            .bannerimg {
+                height: max-content;
+            }
+            .desktoppage {
+                .navigation {
+                    width: 95%;
+                    left: 50px;
+                }
+            }
+            .imgGridContainer {
+                width: 98%;
+            }
+            .myMemories {
+                .memoryImgContainer {
+                    width: 98%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .desktoppage {
+                .navigation {
+                    width: 95%;
+                    left: calc(50% - 1120px / 2 + 0.5px);
+                }
+            }
+
+            .bannerimg {
+                height: auto;
+            }
+
+            .imgGridContainer {
+                width: 98%;
+            }
+
+            .box-1 {
+                img {
+                    height: auto;
+                }
+            }
+
+            .box-1,
+            .box-3,
+            .box-5 {
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
         @media only screen and (max-width: 740px) {
             .topwhite {
                 display: none;
             }
+
             h1 {
                 font-size: 1.5em;
                 line-height: 1.5;
                 padding: 20px 0;
             }
+
             .bannerimg {
                 width: 100vw;
                 height: auto;
             }
+
             .myjourny {
                 min-height: auto;
                 padding-bottom: 20px;
             }
+
             .imgGridContainer {
                 width: 90%;
                 gap: 15px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
             }
+
             .box-1,
             .box-3,
             .box-5 {
@@ -174,12 +231,15 @@
                     width: 100%;
                 }
             }
+
             .myMemories {
                 min-height: auto;
                 padding-bottom: 20px;
+
                 h1 {
                     padding: 20px;
                 }
+
                 .memoryImgContainer {
                     width: 90%;
                     grid-template-columns: 1fr;
