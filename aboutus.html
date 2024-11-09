@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styleanimation.css">
+    <link rel="stylesheet" href="css/courses.css" type="text/css">
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .aboutsection {
+            padding-top: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 70vw;
+
+            text-align: center;
+        }
+
+        .dispaly {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 150%;
+            text-align: center;
+        }
+
+        .centerText {
+            width: 1209px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            /* or 36px */
+            text-align: center;
+        }
+
+        .missionSection {
+            width: 1405px;
+            display: flex;
+        }
+
+        .head1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 150%;
+            padding: 10px 120px;
+        }
+
+        .sideText {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 200%;
+            padding: 10px 110px;
+        }
+
+        .leftSideText {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 200%;
+        }
+
+        .coursesNames {
+            width: 1405px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
+        .whatWeOffer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .courseName {
+            background: #FF7F27;
+            font-family: 'Roboto';
+            font-style: normal;
+            padding: 10px 20px;
+            font-size: 24px;
+        }
+
+        .services {
+            display: flex;
+            width: 1405px;
+        }
+
+        .coursesWrapper {
+            padding: 20px 0px;
+        }
+
+        .learnWithUs {
+            width: 1405px;
+        }
+
+        .parafull {
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBar"> Welcome To VijayTutor
+        <button class="btnMenu" id="toggleMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="parent">
+            <section class="menu " id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div class="desktoppage">
+        <div class="navigation">
+            <div class="logo">
+                <img src="images/logopng.png" alt="">
+                <div class="vijaytutor">VijayTutor</div>
+            </div>
+            <div class="navmenu">
+                <a href="index.html" style="padding-left: 10px;">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="gallary.html">Gallary</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="aboutsection">
+                <img src="images/logo.png">
+                <h1 class="dispaly">About Vijay Tutor</h1>
+                <p class="centerText">
+                    Welcome to Vijay Tutor Site! I’m Vijay Mulsaniya, a seasoned Software Developer and Graphics
+                    Designer with over 12 years of experience in the industry. My journey has taken me through
+                    collaborations with both national and multinational companies, where I have honed my skills and
+                    crafted innovative solutions.
+                </p>
+            </div>
+            <div class="missionSection">
+                <div>
+                    <img src="images/ClassRoom_Small.png">
+                </div>
+                <div>
+                    <h2 class="head1">Our Mission</h2>
+                    <p class="sideText">
+                        I'm excited to embark on a new venture—launching my own business in IT Park Surat. At our
+                        center, we are dedicated to providing top-notch computer education and comprehensive services in
+                        Software Development and Graphics Designing. Our mission is to empower students with the skills
+                        they need to excel in today’s competitive market.
+                    </p>
+                </div>
+            </div>
+            <div class="whatWeOffer">
+                <div class="coursesWrapper">
+                    <h1 class="dispaly">What We Offer ?</h1>
+                    <h3 class="centerText"><strong>Courses</strong> </h3>
+                    <p class="centerText">We offer a diverse range of courses designed to cater to various aspects of
+                        the
+                        tech and design
+                        fields. Our curriculum includes:</p>
+                </div>
+                <div class="coursesNames">
+                    <div class="courseName">HTML</div>
+                    <div class="courseName">CSS</div>
+                    <div class="courseName">JavaScript</div>
+                    <div class="courseName">C# .Net</div>
+                    <div class="courseName">SQL Server</div>
+                    <div class="courseName">.Net Core MVC</div>
+                    <div class="courseName">Entity Framework</div>
+                    <div class="courseName">Microsoft Linq</div>
+                    <div class="courseName">GitHub</div>
+                    <div class="courseName">Figma</div>
+                    <div class="courseName">Angular</div>
+                    <div class="courseName">React</div>
+                    <div class="courseName">CorelDraw</div>
+                    <div class="courseName">Adobe Illustrator</div>
+                    <div class="courseName">Adobe Photoshop</div>
+                </div>
+                <h3 class="centerText" style="margin: 30px 0;"><strong>Services</strong></h3>
+                <div class="services">
+                    <div class="leftSideText">
+                        <p><strong>Software Development</strong></p>
+                        <p>
+                            We provide innovative business solutions at competitive prices, tailored to meet your
+                            specific needs.
+                        </p><br>
+                        <p>
+                            <strong>Graphics Design: </strong>Our services include logo design, business card creation,
+                            website design,
+                            and visual communication to promote your brand effectively.
+                        </p>
+                    </div>
+                    <img src="images/SoftwareDevelopment_Aboutus.png">
+                </div>
+            </div>
+
+            <div class="missionSection">
+                <div>
+                    <img src="images/SupportiveLearning_About.png">
+                </div>
+                <div>
+                    <h2 class="dispaly" style="text-align: left; padding-left: 120px;">Why Choose Us ?</h2>
+                    <p class="sideText">
+                        <strong>100% Job Guarantee:</strong> We are committed to your success and offer a job guarantee
+                        for our students.
+                        <br><strong>Well-Designed Curriculum: </strong>Our courses are meticulously crafted, and we
+                        provide comprehensive
+                        materials to support your learning journey.
+                        <br><strong>Flexible Timing:</strong> We offer flexible batch timings, including separate
+                        batches for girls, to
+                        accommodate various schedules.
+                    </p>
+                </div>
+            </div>
+
+            <div class="learnWithUs">
+                <h1 class="dispaly">Learn With Us</h1>
+                <p class="parafull">
+                    <strong>YouTube Channel:</strong> Explore our YouTube channel, where you’ll find over 100 videos
+                    showcasing our
+                    teaching expertise and design skills. Our channel features in-depth tutorials on SQL Server and C#,
+                    as well as more than 45 videos dedicated to graphic design skills. Watch our engaging content to get
+                    a sense of our instructional style and the breadth of our knowledge before joining our program.
+                </p>
+            </div>
+
+            <div class="learnWithUs">
+                <h1 class="dispaly">Our Achievements</h1>
+                <p class="parafull">
+                    Visit our gallery page to see the numerous awards we've received over the years, highlighting our
+                    dedication and excellence in the field.
+                    Join us at Vijay Tutor Site, and take the first step towards enhancing your skills and achieving
+                    your career goals.
+                    For more information or to get started, feel free to reach out to us!
+                </p>
+                <br>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <H1>Vijay Tutor</H1>
+                <p>VijayTutor is a leading provider of tech education designed to cater to a diverse range of learners.
+                    Whether you're a school or college student, someone looking to grasp computer basics, or an aspiring
+                    programmer, we have tailored courses to meet your needs.
+                </p>
+            </div>
+            <div class="info">
+                <H1>Info</H1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Conatact Us</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Youtute</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <H1>Gallary</H1>
+                <div class="images">
+                    <img class="img01" src="images/Gallary01.png" alt="">
+                    <img class="img02" src="images/Gallary02.png" alt="">
+                    <img class="img03" src="images/Gallary03.png" alt="">
+                    <img class="img04" src="images/Gallary04.png" alt="">
+                    <img class="img05" src="images/Gallary05.png" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <H1>Conatact</H1>
+                <div class="contactdetail">
+                    <div class="contactline">
+                        <img src="images/Phone.png" width="20" alt="">
+                        <p>
+                            +91 91735 46430
+                        </p>
+                    </div>
+                    <div class="contactline">
+                        <img src="images/EmailIcon.png" width="20" height="16" alt="">
+                        <p>
+                            Vijay.trainer@gmail.com
+                        </p>
+                    </div>
+                    <div class="contactline">
+                        <img src="images/LocationIcon.png" width="20" height="30" alt="">
+                        <p>
+                            C-415, IT Park, <br />
+                            Nr. Sudama Chowk, <br />
+                            Mota Varachha Surat. <br />
+                            395006
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var toggleMenuButton = document.getElementById("toggleMenuButton");
+            var menu = document.querySelectorAll(".menu, .active")[0];
+            toggleMenuButton.addEventListener("click", function () {
+                menu.classList.toggle("activemenu");
+            });
+        </script>
+</body>
+
+</html>
