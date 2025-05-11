@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Call Example</title>
+</head>
+<body>
+  <h1>Data from API:</h1>
+  <pre id="output"></pre>
+
+  <button id="sendBtn">Send POST Request</button>
+  <pre id="response"></pre>
+
+  <script>
+    fetch('http://api.vijaytutor.com/api/Courses/GetCourses')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(error => {
+        document.getElementById('output').textContent = 'Error: ' + error;
+      });
+  </script>
+
+<script>
+    document.getElementById('sendBtn').addEventListener('click', () => {
+      const payload = {
+        id: 0,
+        email: "vijay.trainer@gmail.com",
+        isActive: true
+      };
+
+      fetch('http://api.vijaytutor.com/api/Account/subscribe', { // replace with your actual API URL
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(error => {
+        document.getElementById('response').textContent = 'Error: ' + error;
+      });
+    });
+  </script>
+</body>
+</html>
